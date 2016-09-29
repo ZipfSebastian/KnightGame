@@ -10,6 +10,7 @@ public class RightCollider: MonoBehaviour {
             if (coll.gameObject.transform.parent.name == "Environment")
                 collision = true;
         }
+
     }
 
     void OnCollisionExit2D(Collision2D coll)
@@ -23,6 +24,7 @@ public class RightCollider: MonoBehaviour {
 
     void OnCollisionStay2D(Collision2D coll)
     {
+		
         if (coll.gameObject.transform.parent != null)
         {
             if (coll.gameObject.transform.parent.name == "Environment")

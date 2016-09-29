@@ -33,6 +33,8 @@ public class KnightController : MonoBehaviour
     public bool multiplayer;
     public bool grounded;
     private Rigidbody2D characterRigidBody;
+	private float distToGround;
+	public Collider2D colliderRef;
 
     void Awake()
     {
@@ -41,6 +43,7 @@ public class KnightController : MonoBehaviour
         //rightCheck = transform.Find("rightCheck");
         lastPosition = transform.position;
         characterRigidBody = GetComponent<Rigidbody2D>();
+		distToGround = colliderRef.bounds.extents.y;
         //anim = GetComponent<Animator>();
     }
 
@@ -55,12 +58,23 @@ public class KnightController : MonoBehaviour
         jumpDown = true;
     }
 
+	void OnCollisionEnter2D(Collision2D collision){
+		if(collision.gameObject.tag == "Ground")
+		{
+			grounded = true;
+		}
+	}
+
+	//consider when character is jumping .. it will exit collision.
+	void OnCollisionExit2D(Collision2D collision){
+		if(collision.gameObject.tag == "Ground")
+		{
+			grounded = false;
+		}
+	}
 
     void FixedUpdate()
     {
-
-
-        grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));
         //groundCheck.GetComponent<Collider>().
         bool rightCollusion = rightCheck.GetComponent<RightCollider>().collision;
 
@@ -104,6 +118,7 @@ public class KnightController : MonoBehaviour
         }
         else
         {
+			h = 0;
             characterRigidBody.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
             anim.SetFloat("Speed", 0);
         }
@@ -140,6 +155,7 @@ public class KnightController : MonoBehaviour
             //AudioSource.PlayClipAtPoint(jumpClips[i], transform.position);
 
             // Add a vertical force to the player.
+			characterRigidBody.velocity = new Vector2(0,0);
             characterRigidBody.AddForce(new Vector2(0f, jumpForce));
 
             // Make sure the player can't jump again until the jump conditions from Update are satisfied.
