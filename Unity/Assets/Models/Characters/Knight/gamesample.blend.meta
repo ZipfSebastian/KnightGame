@@ -1,0 +1,214 @@
+fileFormatVersion: 2
+guid: 271ba3fd2745efc4d819b5a1bf3eeb7d
+timeCreated: 1474057569
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Cube
+    100002: //RootNode
+    100004: Plane
+    100006: Plane_001
+    100008: Plane_002
+    100010: Plane_006
+    100012: Plane_007
+    100014: Plane_008
+    100016: Plane_009
+    100018: Armature
+    100020: Base
+    100022: Body
+    100024: Body_0
+    100026: Empty
+    100028: Left_arm
+    100030: Left_arm_0
+    100032: Left_leg
+    100034: Left_leg_0
+    100036: Left_limb
+    100038: Left_limb_0
+    100040: Right_arm
+    100042: Right_arm_0
+    100044: Right_leg
+    100046: Right_leg_0
+    100048: Right_limb
+    100050: Right_limb_0
+    100052: Szem
+    400000: Cube
+    400002: //RootNode
+    400004: Plane
+    400006: Plane_001
+    400008: Plane_002
+    400010: Plane_006
+    400012: Plane_007
+    400014: Plane_008
+    400016: Plane_009
+    400018: Armature
+    400020: Base
+    400022: Body
+    400024: Body_0
+    400026: Empty
+    400028: Left_arm
+    400030: Left_arm_0
+    400032: Left_leg
+    400034: Left_leg_0
+    400036: Left_limb
+    400038: Left_limb_0
+    400040: Right_arm
+    400042: Right_arm_0
+    400044: Right_leg
+    400046: Right_leg_0
+    400048: Right_limb
+    400050: Right_limb_0
+    400052: Szem
+    2300000: Cube
+    2300002: Plane
+    2300004: Plane_001
+    2300006: Plane_002
+    2300008: Plane_006
+    2300010: Plane_007
+    2300012: Plane_008
+    2300014: Plane_009
+    2300016: Szem
+    3300000: Cube
+    3300002: Plane
+    3300004: Plane_001
+    3300006: Plane_002
+    3300008: Plane_006
+    3300010: Plane_007
+    3300012: Plane_008
+    3300014: Plane_009
+    3300016: Szem
+    4300000: Cube
+    4300002: Plane_006
+    4300004: Plane_002
+    4300006: Plane
+    4300008: Plane_009
+    4300010: Plane_008
+    4300012: Plane_001
+    4300014: Plane_007
+    4300016: Body
+    4300018: Szem
+    4300020: Right_arm
+    4300022: Left_arm
+    4300024: Right_leg
+    4300026: Right_limb
+    4300028: Left_limb
+    4300030: Left_leg
+    7400000: Default Take
+    9500000: //RootNode
+    13700000: Body
+    13700002: Left_arm
+    13700004: Left_leg
+    13700006: Left_limb
+    13700008: Right_arm
+    13700010: Right_leg
+    13700012: Right_limb
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Cube/Plane
+        weight: 1
+      - path: Cube/Plane_002
+        weight: 1
+      - path: Cube/Plane_006
+        weight: 1
+      - path: Plane_001
+        weight: 1
+      - path: Plane_001/Plane_007
+        weight: 1
+      - path: Plane_009
+        weight: 1
+      - path: Plane_009/Plane_008
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
