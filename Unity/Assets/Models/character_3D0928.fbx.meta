@@ -80,6 +80,8 @@ ModelImporter:
     7400004: Body|Walk
     7400006: Right arm|Idle
     7400008: Armature|jump
+    7400010: Armature|in_air
+    7400012: Armature|landing
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -103,17 +105,17 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: Armature|jump
-      takeName: Armature|jump
+      name: Armature|in_air
+      takeName: Armature|in_air
       firstFrame: 0
-      lastFrame: 29
+      lastFrame: 10
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -251,10 +253,84 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Body|Walk
-      takeName: Body|Walk
+      name: Armature|Idle
+      takeName: Armature|Idle
       firstFrame: 0
-      lastFrame: 40
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Base
+        weight: 1
+      - path: Armature/Base/Body
+        weight: 1
+      - path: Armature/Base/Body/Body 1
+        weight: 1
+      - path: Armature/Base/Body/Body 1/Szem
+        weight: 1
+      - path: Armature/Base/Body/Left arm
+        weight: 1
+      - path: Armature/Base/Body/Left arm/Left arm 1
+        weight: 1
+      - path: Armature/Base/Body/Left arm/Left arm_end
+        weight: 1
+      - path: Armature/Base/Body/Right arm
+        weight: 1
+      - path: Armature/Base/Body/Right arm/Right arm 1
+        weight: 1
+      - path: Armature/Base/Body/Right arm/Right arm_end
+        weight: 1
+      - path: Armature/Base/Left limb
+        weight: 1
+      - path: Armature/Base/Left limb/Left leg
+        weight: 1
+      - path: Armature/Base/Left limb/Left leg/Left leg 1
+        weight: 1
+      - path: Armature/Base/Left limb/Left leg/Left leg_end
+        weight: 1
+      - path: Armature/Base/Left limb/Left limb 1
+        weight: 1
+      - path: Armature/Base/Right limb
+        weight: 1
+      - path: Armature/Base/Right limb/Right leg
+        weight: 1
+      - path: Armature/Base/Right limb/Right leg/Right leg 1
+        weight: 1
+      - path: Armature/Base/Right limb/Right leg/Right leg_end
+        weight: 1
+      - path: Armature/Base/Right limb/Right limb 1
+        weight: 1
+      - path: Empty
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|jump
+      takeName: Armature|jump
+      firstFrame: 0
+      lastFrame: 15
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -325,10 +401,10 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Right arm|Idle
-      takeName: Right arm|Idle
+      name: Armature|landing
+      takeName: Armature|landing
       firstFrame: 0
-      lastFrame: 80
+      lastFrame: 15
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

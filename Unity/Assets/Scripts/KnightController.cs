@@ -21,13 +21,11 @@ public class KnightController : MonoBehaviour
     public float tauntProbability = 50f;    // Chance of a taunt happening.
     public float tauntDelay = 1f;           // Delay for when the taunt should happen.
 
-    private int tauntIndex;                 // The index of the taunts array indicating the most recent taunt.
-    public Transform groundCheck;
+    private int tauntIndex;
     public Transform rightCheck;
     public Animator anim;                  // Reference to the player's animator component.
 
     private int movement = 0;
-    private bool jumpDown = false;
     private string session;
     private Vector3 lastPosition;
     public bool multiplayer;
@@ -35,6 +33,16 @@ public class KnightController : MonoBehaviour
     private Rigidbody2D characterRigidBody;
 	private float distToGround;
 	public Collider2D colliderRef;
+    public float animLength;
+    private bool canJump = true;
+    private bool jumpBegin = false;
+    private bool inAir = false;
+    private Collider2D coliderRef;
+    public float velocityY;
+    public float yLimit;
+    public Transform armTransform;
+    public Vector3 roatation;
+    private Quaternion defaultArmRotation;
 
     void Awake()
     {
@@ -43,21 +51,26 @@ public class KnightController : MonoBehaviour
         //rightCheck = transform.Find("rightCheck");
         lastPosition = transform.position;
         characterRigidBody = GetComponent<Rigidbody2D>();
+        coliderRef = GetComponent<Collider2D>();
 		distToGround = colliderRef.bounds.extents.y;
+        defaultArmRotation = armTransform.rotation;
+
         //anim = GetComponent<Animator>();
     }
 
+    bool IsGrounded(){
+        if((characterRigidBody.velocity.y < -yLimit || characterRigidBody.velocity.y > yLimit)) {
+            return false;
+        }else {
+            return true;
+        }
+    }
 
-    void Update()
+void Update()
     {
 
     }
-
-    public void OnJumpClick()
-    {
-        jumpDown = true;
-    }
-
+    /*
 	void OnCollisionEnter2D(Collision2D collision){
 		if(collision.gameObject.tag == "Ground")
 		{
@@ -71,19 +84,46 @@ public class KnightController : MonoBehaviour
 		{
 			grounded = false;
 		}
-	}
+	}*/
+
+    void LateUpdate() {
+        float axis = CrossPlatformInputManager.GetAxis("Arm");
+        if (axis!= 0) {
+            armTransform.rotation = defaultArmRotation;
+
+            armTransform.Rotate(new Vector3(0,0,axis*80+60));
+        }
+    }
+
 
     void FixedUpdate()
     {
         //groundCheck.GetComponent<Collider>().
         bool rightCollusion = rightCheck.GetComponent<RightCollider>().collision;
-
-
-
-        if ((CrossPlatformInputManager.GetAxis("Vertical") > 0.7 || CrossPlatformInputManager.GetButtonDown("Jump")) && grounded)
-        {
+        grounded = IsGrounded();
+        velocityY = characterRigidBody.velocity.y;
+        if (!grounded) {
+            anim.SetBool("InAir", true);
+            canJump = false;
+            inAir = true;
+        }
+        if (grounded) {
+            anim.SetBool("InAir", false);
+            if (inAir) {
+                jumpBegin = false;
+                inAir = false;
+            }
+            canJump = true;
+            
+        }
+#if !UNITY_STANDALONE
+        if ((CrossPlatformInputManager.GetAxis("Vertical") > 0.7 || CrossPlatformInputManager.GetButtonDown("Jump")) && grounded && canJump && !jumpBegin) { //&& !rightCollusion)
+#else
+        if ((CrossPlatformInputManager.GetAxis("Vertical") > 0.1 || CrossPlatformInputManager.GetButtonDown("Jump")) && grounded && canJump && !jumpBegin) { //&& !rightCollusion) {
+#endif
             jump = true;
-            jumpDown = false;
+            canJump = false;
+            jumpBegin = true;
             //characterRigidBody.constraints = RigidbodyConstraints2D.None;
         }
         else
@@ -124,17 +164,18 @@ public class KnightController : MonoBehaviour
         }
 
         // The Speed animator parameter is set to the absolute value of the horizontal input.
-        
+
         // If the player is changing direction (h has a different sign to velocity.x) or hasn't reached maxSpeed yet...
-        if (h * characterRigidBody.velocity.x < maxSpeed)
-            // ... add a force to the player.
-            characterRigidBody.AddForce(Vector2.right * h * moveForce);
+        if (!rightCollusion) {
+            if (h * characterRigidBody.velocity.x < maxSpeed)
+                // ... add a force to the player.
+                characterRigidBody.AddForce(Vector2.right * h * moveForce);
 
-        // If the player's horizontal velocity is greater than the maxSpeed...
-        if (Mathf.Abs(characterRigidBody.velocity.x) > maxSpeed)
-            // ... set the player's velocity to the maxSpeed in the x axis.
-            characterRigidBody.velocity = new Vector2(Mathf.Sign(characterRigidBody.velocity.x) * maxSpeed, characterRigidBody.velocity.y);
-
+            // If the player's horizontal velocity is greater than the maxSpeed...
+            if (Mathf.Abs(characterRigidBody.velocity.x) > maxSpeed)
+                // ... set the player's velocity to the maxSpeed in the x axis.
+                characterRigidBody.velocity = new Vector2(Mathf.Sign(characterRigidBody.velocity.x) * maxSpeed, characterRigidBody.velocity.y);
+        }
         // If the input is moving the player right and the player is facing left...
         if (h > 0 && !facingRight)
             // ... flip the player.
@@ -148,19 +189,26 @@ public class KnightController : MonoBehaviour
         if (jump)
         {
             // Set the Jump animator trigger parameter.
-            anim.SetTrigger("Jump");
-
-            // Play a random jump audio clip.
-            //int i = Random.Range(0, jumpClips.Length);
-            //AudioSource.PlayClipAtPoint(jumpClips[i], transform.position);
-
-            // Add a vertical force to the player.
-			characterRigidBody.velocity = new Vector2(0,0);
-            characterRigidBody.AddForce(new Vector2(0f, jumpForce));
-
-            // Make sure the player can't jump again until the jump conditions from Update are satisfied.
             jump = false;
+            StartCoroutine(Jump());
+            
         }
+    }
+    
+    private IEnumerator Jump() {
+        anim.SetTrigger("Jump");
+        
+        yield return new WaitForSeconds(animLength);
+        // Play a random jump audio clip.
+        //int i = Random.Range(0, jumpClips.Length);
+        //AudioSource.PlayClipAtPoint(jumpClips[i], transform.position);
+
+        // Add a vertical force to the player.
+        //characterRigidBody.velocity = new Vector2(0, 0);
+        characterRigidBody.AddForce(new Vector2(0f, jumpForce));
+        
+        // Make sure the player can't jump again until the jump conditions from Update are satisfied.
+        
     }
 
     void Flip()
