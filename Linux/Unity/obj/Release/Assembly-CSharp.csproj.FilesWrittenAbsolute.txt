@@ -1,0 +1,13 @@
+/media/sinemissione/DataP1/Flam/KnightGame/Linux/Unity/Temp/bin/Release/UnityEngine.dll
+/media/sinemissione/DataP1/Flam/KnightGame/Linux/Unity/Temp/bin/Release/UnityEditor.dll
+/media/sinemissione/DataP1/Flam/KnightGame/Linux/Unity/Temp/bin/Release/UnityEngine.UI.dll
+/media/sinemissione/DataP1/Flam/KnightGame/Linux/Unity/Temp/bin/Release/UnityEngine.Networking.dll
+/media/sinemissione/DataP1/Flam/KnightGame/Linux/Unity/Temp/bin/Release/Unity.DataContract.dll
+/media/sinemissione/DataP1/Flam/KnightGame/Linux/Unity/Temp/bin/Release/Mono.Cecil.dll
+/media/sinemissione/DataP1/Flam/KnightGame/Linux/Unity/Temp/bin/Release/Unity.SerializationLogic.dll
+/media/sinemissione/DataP1/Flam/KnightGame/Linux/Unity/Temp/bin/Release/ICSharpCode.NRefactory.dll
+/media/sinemissione/DataP1/Flam/KnightGame/Linux/Unity/Temp/bin/Release/Unity.UNetWeaver.dll
+/media/sinemissione/DataP1/Flam/KnightGame/Linux/Unity/Temp/bin/Release/Unity.UNetWeaver.dll.mdb
+/media/sinemissione/DataP1/Flam/KnightGame/Linux/Unity/Temp/bin/Release/Unity.CecilTools.dll
+/media/sinemissione/DataP1/Flam/KnightGame/Linux/Unity/Temp/bin/Release/Mono.Cecil.Pdb.dll
+/media/sinemissione/DataP1/Flam/KnightGame/Linux/Unity/Temp/bin/Release/Mono.Cecil.Mdb.dll
