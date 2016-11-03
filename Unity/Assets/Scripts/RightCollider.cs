@@ -3,8 +3,8 @@
 public class RightCollider: MonoBehaviour {
     public bool collision = false;
 
-    void OnCollisionEnter2D(Collision2D coll)
-    {
+    void OnTriggerEnter(Collider coll) 
+        {
         if (coll.gameObject.transform.parent != null)
         {
             if (coll.gameObject.transform.parent.name == "Environment")
@@ -13,8 +13,8 @@ public class RightCollider: MonoBehaviour {
 
     }
 
-    void OnCollisionExit2D(Collision2D coll)
-    {
+    void OnTriggerExit(Collider coll) 
+        {
         if (coll.gameObject.transform.parent != null)
         {
             if (coll.gameObject.transform.parent.name == "Environment")
@@ -22,9 +22,8 @@ public class RightCollider: MonoBehaviour {
         }
     }
 
-    void OnCollisionStay2D(Collision2D coll)
-    {
-		
+    void OnTriggerStay(Collider coll) {
+
         if (coll.gameObject.transform.parent != null)
         {
             if (coll.gameObject.transform.parent.name == "Environment")

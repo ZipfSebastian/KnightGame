@@ -30,19 +30,19 @@ public class KnightController : MonoBehaviour
     private Vector3 lastPosition;
     public bool multiplayer;
     public bool grounded;
-    private Rigidbody2D characterRigidBody;
-	private float distToGround;
-	public Collider2D colliderRef;
+    private Rigidbody characterRigidBody;
+	public float distToGround;
     public float animLength;
     private bool canJump = true;
     private bool jumpBegin = false;
     private bool inAir = false;
-    private Collider2D coliderRef;
+    private Collider coliderRef;
     public float velocityY;
     public float yLimit;
     public Transform armTransform;
     public Vector3 roatation;
     private Quaternion defaultArmRotation;
+    public Vector3 velocity;
 
     void Awake()
     {
@@ -50,9 +50,9 @@ public class KnightController : MonoBehaviour
         //groundCheck = transform.Find("groundCheck");
         //rightCheck = transform.Find("rightCheck");
         lastPosition = transform.position;
-        characterRigidBody = GetComponent<Rigidbody2D>();
-        coliderRef = GetComponent<Collider2D>();
-		distToGround = colliderRef.bounds.extents.y;
+        characterRigidBody = GetComponent<Rigidbody>();
+        coliderRef = GetComponent<Collider>();
+		distToGround = coliderRef.bounds.extents.y;
         defaultArmRotation = armTransform.rotation;
 
         //anim = GetComponent<Animator>();
@@ -61,8 +61,8 @@ public class KnightController : MonoBehaviour
     bool IsGrounded(){
         if((characterRigidBody.velocity.y < -yLimit || characterRigidBody.velocity.y > yLimit)) {
             return false;
-        }else {
-            return true;
+        }else{
+            return Physics.CheckCapsule(coliderRef.bounds.center, new Vector3(coliderRef.bounds.center.x, coliderRef.bounds.min.y - distToGround, coliderRef.bounds.center.z), distToGround);
         }
     }
 
@@ -100,6 +100,7 @@ void Update()
     {
         //groundCheck.GetComponent<Collider>().
         bool rightCollusion = rightCheck.GetComponent<RightCollider>().collision;
+            //false;
         grounded = IsGrounded();
         velocityY = characterRigidBody.velocity.y;
         if (!grounded) {
@@ -141,7 +142,7 @@ void Update()
         {
             h = CrossPlatformInputManager.GetAxis("Horizontal");
             movement = MOVEMENT_LEFT;
-            characterRigidBody.constraints = RigidbodyConstraints2D.None | RigidbodyConstraints2D.FreezeRotation;
+            characterRigidBody.constraints = RigidbodyConstraints.None | RigidbodyConstraints.FreezeRotation;
             float charSpeed = Mathf.Abs(characterRigidBody.velocity.x);
             if(charSpeed > 0.2)
                 anim.SetFloat("Speed", charSpeed);
@@ -151,7 +152,7 @@ void Update()
         {
             h = CrossPlatformInputManager.GetAxis("Horizontal");
             movement = MOVEMENT_RIGHT;
-            characterRigidBody.constraints = RigidbodyConstraints2D.None | RigidbodyConstraints2D.FreezeRotation;
+            characterRigidBody.constraints = RigidbodyConstraints.None | RigidbodyConstraints.FreezeRotation;
             float charSpeed = Mathf.Abs(characterRigidBody.velocity.x);
             if (charSpeed > 0.2)
                 anim.SetFloat("Speed", charSpeed);
@@ -159,9 +160,12 @@ void Update()
         else
         {
 			h = 0;
-            characterRigidBody.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
+            characterRigidBody.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezeRotation;
             anim.SetFloat("Speed", 0);
         }
+
+
+        //http://answers.unity3d.com/questions/1033875/2d-platformer-horizontal-max-speed.html
 
         // The Speed animator parameter is set to the absolute value of the horizontal input.
 
@@ -175,6 +179,7 @@ void Update()
             if (Mathf.Abs(characterRigidBody.velocity.x) > maxSpeed)
                 // ... set the player's velocity to the maxSpeed in the x axis.
                 characterRigidBody.velocity = new Vector2(Mathf.Sign(characterRigidBody.velocity.x) * maxSpeed, characterRigidBody.velocity.y);
+            velocity = characterRigidBody.velocity;
         }
         // If the input is moving the player right and the player is facing left...
         if (h > 0 && !facingRight)
@@ -196,17 +201,18 @@ void Update()
     }
     
     private IEnumerator Jump() {
-        anim.SetTrigger("Jump");
-        
-        yield return new WaitForSeconds(animLength);
-        // Play a random jump audio clip.
-        //int i = Random.Range(0, jumpClips.Length);
-        //AudioSource.PlayClipAtPoint(jumpClips[i], transform.position);
+        if (grounded) {
+            anim.SetTrigger("Jump");
 
-        // Add a vertical force to the player.
-        //characterRigidBody.velocity = new Vector2(0, 0);
-        characterRigidBody.AddForce(new Vector2(0f, jumpForce));
-        
+            yield return new WaitForSeconds(animLength);
+            // Play a random jump audio clip.
+            //int i = Random.Range(0, jumpClips.Length);
+            //AudioSource.PlayClipAtPoint(jumpClips[i], transform.position);
+
+            // Add a vertical force to the player.
+            //characterRigidBody.velocity = new Vector2(0, 0);
+            characterRigidBody.AddForce(new Vector2(0f, jumpForce));
+        }
         // Make sure the player can't jump again until the jump conditions from Update are satisfied.
         
     }

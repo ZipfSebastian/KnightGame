@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+<body ng-app="NorocApp">
+<div class="container main-container">
+    <form name="registerUserForm" class="form-registerUser" novalidate>
+        <h3 class="form-registerUser-heading">Registration</h3>
+
+        <div class="alert alert-danger" role="alert" ng-if="registrationError">
+            {{errorMessage}}
+        </div>
+        <div class="alert alert-success" role="alert" ng-if="successfulRegistration">
+            {{successfulMessage}}
+        </div>
+
+        <!--User name-->
+        <div class="form-group">
+            <label for="inputUsername" class="col-sm-2 control-label">Username</label>
+            <div class="col-sm-10">
+                <input type="text" id="inputUsername" name="inputUsernameName" class="form-control"
+                       placeholder="Username"
+                       ng-model="newUser.loginName" ng-minlength="5"
+                       ng-maxlength="20" required>
+
+                <div ng-if="registerUserForm.inputUsernameName.$dirty"
+                     ng-messages="registerUserForm.inputUsernameName.$error"
+                     style="color:maroon" role="alert">
+                    <div ng-message="required">Username is required for registration!</div>
+                    <div ng-message="minlength">Username is too short(min 5 characters)</div>
+                    <div ng-message="maxlength">Username is too long(max 20 characters)</div>
+                </div>
+            </div>
+        </div>
+
+        <!--Full name-->
+        <div class="form-group">
+            <label for="inputFullName" class="col-sm-2 control-label">Full name</label>
+            <div class="col-sm-10">
+                <input type="text" id="inputFullName" name="inputFullNameName" class="form-control"
+                       placeholder="My Name"
+                       ng-model="newUser.fullName" ng-minlength="5"
+                       ng-maxlength="20" required>
+
+                <div ng-if="registerUserForm.inputFullNameName.$dirty"
+                     ng-messages="registerUserForm.inputFullNameName.$error"
+                     style="color:maroon" role="alert">
+                    <div ng-message="required">Your full name is required for registration!</div>
+                    <div ng-message="minlength">Full name is too short(min 5 characters)</div>
+                    <div ng-message="maxlength">Full name is too long(max 20 characters)</div>
+                </div>
+            </div>
+        </div>
+
+        <!--Email address-->
+        <div class="form-group">
+            <label for="inputEmailAddress" class="col-sm-2 control-label">Valid email address</label>
+            <div class="col-sm-10">
+                <input type="email" id="inputEmailAddress" name="inputEmailAddressName" class="form-control"
+                       placeholder="email@address.com" required
+                       ng-model="newUser.emailAddress">
+
+                <div ng-if="registerUserForm.inputEmailAddressName.$dirty"
+                     ng-messages="registerUserForm.inputEmailAddressName.$error" style="color:maroon" role="alert">
+                    <div ng-message="required">Email address is required for registration!</div>
+                    <div ng-message="email">Invalid email address!</div>
+                </div>
+            </div>
+        </div>
+
+        <!--Password-->
+        <div class="form-group">
+            <label for="inputPassword" class="col-sm-2 control-label">Password</label>
+            <div class="col-sm-10">
+                <input type="password" id="inputPassword" name="inputPasswordName" class="form-control"
+                       placeholder="password"
+                       ng-model="newUser.password" required ng-minlength="5"
+                       ng-maxlength="20">
+
+                <div ng-if="registerUserForm.inputPasswordName.$dirty"
+                     ng-messages="registerUserForm.inputPasswordName.$error"
+                     style="color:maroon" role="alert">
+                    <div ng-message="required">Password is required for registration!</div>
+                    <div ng-message="minlength">Password is too short(min 5 characters)</div>
+                    <div ng-message="maxlength">Password is too long(max 20 characters)</div>
+                </div>
+            </div>
+        </div>
+
+        <!--Password again-->
+        <div class="form-group">
+            <label for="inputPasswordChecker" class="col-sm-2 control-label">Confirm password</label>
+            <div class="col-sm-10">
+                <input type="password" id="inputPasswordChecker" name="inputPasswordCheckerName" class="form-control"
+                       placeholder="password again" ng-model="passwordChecker" match-password="inputPasswordName"
+                       required>
+
+                <div ng-messages="registerUserForm.inputPasswordCheckerName.$error" style="color:maroon" role="alert">
+                    <div ng-message="passwordMatch">Your passwords did not match !</div>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-primary" ng-disabled="!registerUserForm.$valid" ng-click="sendNewUser()">Register me!
+        </button>
+
+
+    </form>
+</div>
+</body>
+</html>

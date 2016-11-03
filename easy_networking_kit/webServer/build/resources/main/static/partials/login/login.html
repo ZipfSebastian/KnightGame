@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div class="container main-container">
+    <form class="form-signin">
+        <h3 class="form-signin-heading">Please sign in</h3>
+        <div class="alert alert-danger" role="alert" ng-if="loginError">
+            Wrong Username / Password
+        </div>
+        <label for="inputUsername" class="sr-only">Username</label>
+        <input type="text" id="inputUsername" class="form-control" placeholder="Username" required autofocus ng-model="identity.username">
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required ng-model="identity.password">
+        <button class="btn btn-primary btn-block" ng-click="login()">Sign in</button>
+    </form>
+    <div>
+        <a ui-sref="registerNewUser">Register!</a>
+    </div>
+    <div>
+        <a ui-sref="passwordReset">I don't remember my password...</a>
+    </div>
+</div>
+</body>
+</html>

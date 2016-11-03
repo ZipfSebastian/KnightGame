@@ -1,0 +1,2073 @@
+
+Thu Jul 07 17:38:56 CEST 2016 Running
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Thu Jul 07 18:27:32 CEST 2016 Running
+Thu Jul 07 18:34:38 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 07 18:34:38 CEST 2016 Client connected!
+Thu Jul 07 18:36:07 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 07 18:36:07 CEST 2016 Client connected!
+Thu Jul 07 18:46:54 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 07 18:46:54 CEST 2016 Client connected!
+Thu Jul 07 18:48:03 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 07 18:48:03 CEST 2016 Client connected!
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Thu Jul 07 18:49:36 CEST 2016 Running
+Thu Jul 07 18:49:59 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 07 18:49:59 CEST 2016 Client connected!
+Thu Jul 07 18:50:04 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 07 18:50:04 CEST 2016 Client connected!
+
+Thu Jul 07 18:51:54 CEST 2016 Running
+Thu Jul 07 18:51:57 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 07 18:51:57 CEST 2016 Client connected!
+
+Thu Jul 07 18:58:39 CEST 2016 Running
+Thu Jul 07 18:58:44 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 07 18:58:44 CEST 2016 Client connected!
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Thu Jul 07 18:59:36 CEST 2016 Running
+Thu Jul 07 18:59:44 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 07 18:59:44 CEST 2016 Client connected!
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Thu Jul 07 19:00:33 CEST 2016 Running
+Thu Jul 07 19:00:39 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 07 19:00:39 CEST 2016 Client connected!
+
+Thu Jul 07 19:04:21 CEST 2016 Running
+Thu Jul 07 19:04:25 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 07 19:04:25 CEST 2016 Client connected!
+Thu Jul 07 19:05:41 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 07 19:05:41 CEST 2016 Client connected!
+Thu Jul 07 19:06:06 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 07 19:06:06 CEST 2016 Client connected!
+
+EXCEPTION: Address already in use: JVM_Bind
+--------------------------------------
+java.net.DualStackPlainSocketImpl.bind0(Native Method)
+java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+java.net.ServerSocket.bind(ServerSocket.java:375)
+java.net.ServerSocket.<init>(ServerSocket.java:237)
+java.net.ServerSocket.<init>(ServerSocket.java:128)
+thread.ServeThread.Init(ServeThread.java:40)
+server.CommandPrompt.startServer(CommandPrompt.java:117)
+server.CommandPrompt.commandReceived(CommandPrompt.java:43)
+main.ServerApplication.mainThread(ServerApplication.java:52)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+Fri Jul 08 13:03:33 CEST 2016 Running
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Fri Jul 08 13:18:37 CEST 2016 Running
+Fri Jul 08 13:18:41 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 08 13:18:41 CEST 2016 Client connected!
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Sat Jul 09 16:37:54 CEST 2016 Unable to connect to database, check you created correctly and db user can connect to it!
+EXCEPTION: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+--------------------------------------
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:981)
+com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:339)
+com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2286)
+com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2085)
+com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:795)
+com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:327)
+java.sql.DriverManager.getConnection(DriverManager.java:664)
+java.sql.DriverManager.getConnection(DriverManager.java:208)
+com.j256.ormlite.jdbc.JdbcConnectionSource.makeConnection(JdbcConnectionSource.java:232)
+com.j256.ormlite.jdbc.JdbcConnectionSource.getReadWriteConnection(JdbcConnectionSource.java:174)
+com.j256.ormlite.table.TableUtils.doCreateTable(TableUtils.java:438)
+com.j256.ormlite.table.TableUtils.createTable(TableUtils.java:220)
+com.j256.ormlite.table.TableUtils.createTableIfNotExists(TableUtils.java:61)
+server.CommandPrompt.startServer(CommandPrompt.java:107)
+server.CommandPrompt.commandReceived(CommandPrompt.java:43)
+main.ServerApplication.mainThread(ServerApplication.java:52)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Sat Jul 09 16:38:07 CEST 2016 Unable to connect to database, check you created correctly and db user can connect to it!
+EXCEPTION: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+--------------------------------------
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:981)
+com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:339)
+com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2286)
+com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2085)
+com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:795)
+com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:327)
+java.sql.DriverManager.getConnection(DriverManager.java:664)
+java.sql.DriverManager.getConnection(DriverManager.java:208)
+com.j256.ormlite.jdbc.JdbcConnectionSource.makeConnection(JdbcConnectionSource.java:232)
+com.j256.ormlite.jdbc.JdbcConnectionSource.getReadWriteConnection(JdbcConnectionSource.java:174)
+com.j256.ormlite.table.TableUtils.doCreateTable(TableUtils.java:438)
+com.j256.ormlite.table.TableUtils.createTable(TableUtils.java:220)
+com.j256.ormlite.table.TableUtils.createTableIfNotExists(TableUtils.java:61)
+server.CommandPrompt.startServer(CommandPrompt.java:107)
+server.CommandPrompt.commandReceived(CommandPrompt.java:43)
+main.ServerApplication.mainThread(ServerApplication.java:52)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Sat Jul 09 16:38:39 CEST 2016 Running
+Sat Jul 09 16:38:45 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Sat Jul 09 16:38:45 CEST 2016 Client connected!
+Sat Jul 09 16:40:01 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Sat Jul 09 16:40:01 CEST 2016 Client connected!
+Sat Jul 09 16:40:49 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Sat Jul 09 16:40:49 CEST 2016 Client connected!
+Sat Jul 09 16:41:11 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Sat Jul 09 16:41:11 CEST 2016 Client connected!
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Thu Jul 14 09:02:25 CEST 2016 Unable to connect to database, check you created correctly and db user can connect to it!
+EXCEPTION: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+--------------------------------------
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:981)
+com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:339)
+com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2286)
+com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2085)
+com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:795)
+com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:327)
+java.sql.DriverManager.getConnection(DriverManager.java:664)
+java.sql.DriverManager.getConnection(DriverManager.java:208)
+com.j256.ormlite.jdbc.JdbcConnectionSource.makeConnection(JdbcConnectionSource.java:232)
+com.j256.ormlite.jdbc.JdbcConnectionSource.getReadWriteConnection(JdbcConnectionSource.java:174)
+com.j256.ormlite.table.TableUtils.doCreateTable(TableUtils.java:438)
+com.j256.ormlite.table.TableUtils.createTable(TableUtils.java:220)
+com.j256.ormlite.table.TableUtils.createTableIfNotExists(TableUtils.java:61)
+server.CommandPrompt.startServer(CommandPrompt.java:107)
+server.CommandPrompt.commandReceived(CommandPrompt.java:43)
+main.ServerApplication.mainThread(ServerApplication.java:52)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Thu Jul 14 09:03:11 CEST 2016 Running
+Thu Jul 14 09:03:17 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 14 09:03:17 CEST 2016 Client connected!
+Thu Jul 14 09:05:04 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 14 09:05:04 CEST 2016 Client connected!
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Thu Jul 14 15:06:12 CEST 2016 Running
+Thu Jul 14 15:07:33 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 14 15:07:33 CEST 2016 Client connected!
+Thu Jul 14 15:09:18 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 14 15:09:18 CEST 2016 Client connected!
+Thu Jul 14 15:12:06 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 14 15:12:06 CEST 2016 Client connected!
+Thu Jul 14 15:12:21 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 14 15:12:21 CEST 2016 Client connected!
+Thu Jul 14 15:12:52 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 14 15:12:52 CEST 2016 Client connected!
+Thu Jul 14 15:13:16 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 14 15:13:16 CEST 2016 Client connected!
+Thu Jul 14 15:13:51 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 14 15:13:51 CEST 2016 Client connected!
+Thu Jul 14 15:14:23 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 14 15:14:23 CEST 2016 Client connected!
+Thu Jul 14 15:14:44 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 14 15:14:44 CEST 2016 Client connected!
+Thu Jul 14 15:15:03 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 14 15:15:03 CEST 2016 Client connected!
+Thu Jul 14 15:15:25 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 14 15:15:25 CEST 2016 Client connected!
+Thu Jul 14 15:15:51 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 14 15:15:51 CEST 2016 Client connected!
+Thu Jul 14 15:16:56 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 14 15:16:56 CEST 2016 Client connected!
+Thu Jul 14 15:17:52 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 14 15:17:52 CEST 2016 Client connected!
+Thu Jul 14 15:18:12 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 14 15:18:12 CEST 2016 Client connected!
+Thu Jul 14 15:18:39 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 14 15:18:39 CEST 2016 Client connected!
+Thu Jul 14 15:20:09 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 14 15:20:09 CEST 2016 Client connected!
+Thu Jul 14 15:20:52 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 14 15:20:52 CEST 2016 Client connected!
+Thu Jul 14 15:21:11 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 14 15:21:11 CEST 2016 Client connected!
+Thu Jul 14 15:21:45 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 14 15:21:45 CEST 2016 Client connected!
+Thu Jul 14 15:22:55 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 14 15:22:55 CEST 2016 Client connected!
+Thu Jul 14 15:24:49 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 14 15:24:49 CEST 2016 Client connected!
+Thu Jul 14 15:25:16 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 14 15:25:16 CEST 2016 Client connected!
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Thu Jul 14 15:47:23 CEST 2016 Running
+Thu Jul 14 15:48:08 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 14 15:48:08 CEST 2016 Client connected!
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Thu Jul 14 18:16:03 CEST 2016 Running
+Thu Jul 14 18:16:15 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 14 18:16:15 CEST 2016 Client connected!
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Fri Jul 15 11:51:48 CEST 2016 Running
+Fri Jul 15 11:52:02 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 11:52:02 CEST 2016 Client connected!
+Fri Jul 15 12:06:26 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 12:06:26 CEST 2016 Client connected!
+EXCEPTION: Table 'inside_conflict_db.system__user' doesn't exist
+--------------------------------------
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+com.mysql.jdbc.Util.getInstance(Util.java:387)
+com.mysql.jdbc.SQLError.createSQLException(SQLError.java:939)
+com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3878)
+com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3814)
+com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2478)
+com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2625)
+com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2551)
+com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1962)
+com.j256.ormlite.jdbc.JdbcCompiledStatement.runQuery(JdbcCompiledStatement.java:55)
+com.j256.ormlite.stmt.SelectIterator.<init>(SelectIterator.java:55)
+com.j256.ormlite.stmt.StatementExecutor.buildIterator(StatementExecutor.java:194)
+com.j256.ormlite.stmt.StatementExecutor.query(StatementExecutor.java:153)
+com.j256.ormlite.dao.BaseDaoImpl.query(BaseDaoImpl.java:245)
+com.j256.ormlite.stmt.QueryBuilder.query(QueryBuilder.java:262)
+com.j256.ormlite.stmt.Where.query(Where.java:480)
+handlers.LoginRequest.onRecive(LoginRequest.java:34)
+server.Router.onRecive(Router.java:32)
+thread.ClientThread.receive(ClientThread.java:84)
+thread.ClientThread.run(ClientThread.java:48)
+
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Fri Jul 15 12:08:56 CEST 2016 Running
+Fri Jul 15 12:10:00 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 12:10:00 CEST 2016 Client connected!
+Fri Jul 15 12:10:58 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 12:10:58 CEST 2016 Client connected!
+Fri Jul 15 12:11:23 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 12:11:23 CEST 2016 Client connected!
+Fri Jul 15 12:15:33 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 12:15:33 CEST 2016 Client connected!
+Fri Jul 15 12:17:08 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 12:17:08 CEST 2016 Client connected!
+Fri Jul 15 12:18:50 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 12:18:50 CEST 2016 Client connected!
+Fri Jul 15 12:29:39 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 12:29:39 CEST 2016 Client connected!
+Fri Jul 15 12:31:25 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 12:31:25 CEST 2016 Client connected!
+Fri Jul 15 12:32:14 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 12:32:14 CEST 2016 Client connected!
+EXCEPTION: Table 'inside_conflict_db.system__user' doesn't exist
+--------------------------------------
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+com.mysql.jdbc.Util.getInstance(Util.java:387)
+com.mysql.jdbc.SQLError.createSQLException(SQLError.java:939)
+com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3878)
+com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3814)
+com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2478)
+com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2625)
+com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2551)
+com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1962)
+com.j256.ormlite.jdbc.JdbcCompiledStatement.runQuery(JdbcCompiledStatement.java:55)
+com.j256.ormlite.stmt.SelectIterator.<init>(SelectIterator.java:55)
+com.j256.ormlite.stmt.StatementExecutor.buildIterator(StatementExecutor.java:194)
+com.j256.ormlite.stmt.StatementExecutor.query(StatementExecutor.java:153)
+com.j256.ormlite.dao.BaseDaoImpl.query(BaseDaoImpl.java:245)
+com.j256.ormlite.stmt.QueryBuilder.query(QueryBuilder.java:262)
+com.j256.ormlite.stmt.Where.query(Where.java:480)
+handlers.LoginRequest.onRecive(LoginRequest.java:34)
+server.Router.onRecive(Router.java:32)
+thread.ClientThread.receive(ClientThread.java:84)
+thread.ClientThread.run(ClientThread.java:48)
+
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Fri Jul 15 12:35:39 CEST 2016 Running
+Fri Jul 15 12:35:44 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 12:35:44 CEST 2016 Client connected!
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Fri Jul 15 12:36:35 CEST 2016 Running
+Fri Jul 15 12:36:39 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 12:36:39 CEST 2016 Client connected!
+Fri Jul 15 12:37:01 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 12:37:01 CEST 2016 Client connected!
+EXCEPTION: Table 'inside_conflict_db.system__user' doesn't exist
+--------------------------------------
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+com.mysql.jdbc.Util.getInstance(Util.java:387)
+com.mysql.jdbc.SQLError.createSQLException(SQLError.java:939)
+com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3878)
+com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3814)
+com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2478)
+com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2625)
+com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2551)
+com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1962)
+com.j256.ormlite.jdbc.JdbcCompiledStatement.runQuery(JdbcCompiledStatement.java:55)
+com.j256.ormlite.stmt.SelectIterator.<init>(SelectIterator.java:55)
+com.j256.ormlite.stmt.StatementExecutor.buildIterator(StatementExecutor.java:194)
+com.j256.ormlite.stmt.StatementExecutor.query(StatementExecutor.java:153)
+com.j256.ormlite.dao.BaseDaoImpl.query(BaseDaoImpl.java:245)
+com.j256.ormlite.stmt.QueryBuilder.query(QueryBuilder.java:262)
+com.j256.ormlite.stmt.Where.query(Where.java:480)
+handlers.LoginRequest.onRecive(LoginRequest.java:34)
+server.Router.onRecive(Router.java:32)
+thread.ClientThread.receive(ClientThread.java:84)
+thread.ClientThread.run(ClientThread.java:48)
+
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Fri Jul 15 12:37:53 CEST 2016 Running
+Fri Jul 15 12:37:59 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 12:37:59 CEST 2016 Client connected!
+Fri Jul 15 12:38:01 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 12:38:01 CEST 2016 Client connected!
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Fri Jul 15 12:38:37 CEST 2016 Unable to connect to database, check you created correctly and db user can connect to it!
+EXCEPTION: Unknown database 'inside_conflict_db'
+--------------------------------------
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+com.mysql.jdbc.Util.getInstance(Util.java:387)
+com.mysql.jdbc.SQLError.createSQLException(SQLError.java:939)
+com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3878)
+com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3814)
+com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1694)
+com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1215)
+com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2255)
+com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2286)
+com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2085)
+com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:795)
+com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:327)
+java.sql.DriverManager.getConnection(DriverManager.java:664)
+java.sql.DriverManager.getConnection(DriverManager.java:208)
+com.j256.ormlite.jdbc.JdbcConnectionSource.makeConnection(JdbcConnectionSource.java:232)
+com.j256.ormlite.jdbc.JdbcConnectionSource.getReadWriteConnection(JdbcConnectionSource.java:174)
+com.j256.ormlite.table.TableUtils.doCreateTable(TableUtils.java:438)
+com.j256.ormlite.table.TableUtils.createTable(TableUtils.java:220)
+com.j256.ormlite.table.TableUtils.createTableIfNotExists(TableUtils.java:61)
+server.CommandPrompt.startServer(CommandPrompt.java:107)
+server.CommandPrompt.commandReceived(CommandPrompt.java:43)
+main.ServerApplication.mainThread(ServerApplication.java:52)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Fri Jul 15 12:38:52 CEST 2016 Unable to connect to database, check you created correctly and db user can connect to it!
+EXCEPTION: Unknown database 'inside_conflict_db'
+--------------------------------------
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+com.mysql.jdbc.Util.getInstance(Util.java:387)
+com.mysql.jdbc.SQLError.createSQLException(SQLError.java:939)
+com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3878)
+com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3814)
+com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1694)
+com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1215)
+com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2255)
+com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2286)
+com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2085)
+com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:795)
+com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:327)
+java.sql.DriverManager.getConnection(DriverManager.java:664)
+java.sql.DriverManager.getConnection(DriverManager.java:208)
+com.j256.ormlite.jdbc.JdbcConnectionSource.makeConnection(JdbcConnectionSource.java:232)
+com.j256.ormlite.jdbc.JdbcConnectionSource.getReadWriteConnection(JdbcConnectionSource.java:174)
+com.j256.ormlite.table.TableUtils.doCreateTable(TableUtils.java:438)
+com.j256.ormlite.table.TableUtils.createTable(TableUtils.java:220)
+com.j256.ormlite.table.TableUtils.createTableIfNotExists(TableUtils.java:61)
+server.CommandPrompt.startServer(CommandPrompt.java:107)
+server.CommandPrompt.commandReceived(CommandPrompt.java:43)
+main.ServerApplication.mainThread(ServerApplication.java:52)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Fri Jul 15 12:39:30 CEST 2016 Running
+Fri Jul 15 12:40:10 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 12:40:10 CEST 2016 Client connected!
+EXCEPTION: Column 'money' not found.
+--------------------------------------
+com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
+com.mysql.jdbc.SQLError.createSQLException(SQLError.java:896)
+com.mysql.jdbc.SQLError.createSQLException(SQLError.java:885)
+com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860)
+com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1076)
+com.j256.ormlite.jdbc.JdbcDatabaseResults.findColumn(JdbcDatabaseResults.java:74)
+com.j256.ormlite.field.FieldType.resultToJava(FieldType.java:739)
+com.j256.ormlite.stmt.mapped.BaseMappedQuery.mapRow(BaseMappedQuery.java:60)
+com.j256.ormlite.stmt.SelectIterator.getCurrent(SelectIterator.java:270)
+com.j256.ormlite.stmt.SelectIterator.nextThrow(SelectIterator.java:161)
+com.j256.ormlite.stmt.StatementExecutor.query(StatementExecutor.java:159)
+com.j256.ormlite.dao.BaseDaoImpl.query(BaseDaoImpl.java:245)
+com.j256.ormlite.stmt.QueryBuilder.query(QueryBuilder.java:262)
+com.j256.ormlite.stmt.Where.query(Where.java:480)
+handlers.LoginRequest.onRecive(LoginRequest.java:34)
+server.Router.onRecive(Router.java:32)
+thread.ClientThread.receive(ClientThread.java:84)
+thread.ClientThread.run(ClientThread.java:48)
+
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Fri Jul 15 12:40:21 CEST 2016 Running
+Fri Jul 15 12:40:29 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 12:40:29 CEST 2016 Client connected!
+EXCEPTION: Column 'money' not found.
+--------------------------------------
+com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
+com.mysql.jdbc.SQLError.createSQLException(SQLError.java:896)
+com.mysql.jdbc.SQLError.createSQLException(SQLError.java:885)
+com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860)
+com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1076)
+com.j256.ormlite.jdbc.JdbcDatabaseResults.findColumn(JdbcDatabaseResults.java:74)
+com.j256.ormlite.field.FieldType.resultToJava(FieldType.java:739)
+com.j256.ormlite.stmt.mapped.BaseMappedQuery.mapRow(BaseMappedQuery.java:60)
+com.j256.ormlite.stmt.SelectIterator.getCurrent(SelectIterator.java:270)
+com.j256.ormlite.stmt.SelectIterator.nextThrow(SelectIterator.java:161)
+com.j256.ormlite.stmt.StatementExecutor.query(StatementExecutor.java:159)
+com.j256.ormlite.dao.BaseDaoImpl.query(BaseDaoImpl.java:245)
+com.j256.ormlite.stmt.QueryBuilder.query(QueryBuilder.java:262)
+com.j256.ormlite.stmt.Where.query(Where.java:480)
+handlers.LoginRequest.onRecive(LoginRequest.java:34)
+server.Router.onRecive(Router.java:32)
+thread.ClientThread.receive(ClientThread.java:84)
+thread.ClientThread.run(ClientThread.java:48)
+
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Fri Jul 15 12:50:22 CEST 2016 Running
+Fri Jul 15 12:50:27 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 12:50:27 CEST 2016 Client connected!
+EXCEPTION: Column 'money' not found.
+--------------------------------------
+com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
+com.mysql.jdbc.SQLError.createSQLException(SQLError.java:896)
+com.mysql.jdbc.SQLError.createSQLException(SQLError.java:885)
+com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860)
+com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1076)
+com.j256.ormlite.jdbc.JdbcDatabaseResults.findColumn(JdbcDatabaseResults.java:74)
+com.j256.ormlite.field.FieldType.resultToJava(FieldType.java:739)
+com.j256.ormlite.stmt.mapped.BaseMappedQuery.mapRow(BaseMappedQuery.java:60)
+com.j256.ormlite.stmt.SelectIterator.getCurrent(SelectIterator.java:270)
+com.j256.ormlite.stmt.SelectIterator.nextThrow(SelectIterator.java:161)
+com.j256.ormlite.stmt.StatementExecutor.query(StatementExecutor.java:159)
+com.j256.ormlite.dao.BaseDaoImpl.query(BaseDaoImpl.java:245)
+com.j256.ormlite.stmt.QueryBuilder.query(QueryBuilder.java:262)
+com.j256.ormlite.stmt.Where.query(Where.java:480)
+handlers.LoginRequest.onRecive(LoginRequest.java:34)
+server.Router.onRecive(Router.java:32)
+thread.ClientThread.receive(ClientThread.java:84)
+thread.ClientThread.run(ClientThread.java:48)
+
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Fri Jul 15 12:52:05 CEST 2016 Running
+Fri Jul 15 12:52:10 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 12:52:10 CEST 2016 Client connected!
+Fri Jul 15 12:52:11 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 12:52:11 CEST 2016 Client connected!
+Fri Jul 15 12:54:31 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 12:54:31 CEST 2016 Client connected!
+Fri Jul 15 12:55:32 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 12:55:32 CEST 2016 Client connected!
+Fri Jul 15 12:59:42 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 12:59:42 CEST 2016 Client connected!
+Fri Jul 15 13:00:50 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 13:00:50 CEST 2016 Client connected!
+Fri Jul 15 13:01:34 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 13:01:34 CEST 2016 Client connected!
+Fri Jul 15 13:02:12 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 13:02:12 CEST 2016 Client connected!
+Fri Jul 15 13:03:59 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 13:03:59 CEST 2016 Client connected!
+Fri Jul 15 13:04:34 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 13:04:34 CEST 2016 Client connected!
+Fri Jul 15 13:06:54 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 13:06:54 CEST 2016 Client connected!
+Fri Jul 15 13:07:37 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 13:07:37 CEST 2016 Client connected!
+Fri Jul 15 13:11:35 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 13:11:35 CEST 2016 Client connected!
+Fri Jul 15 13:12:04 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 13:12:04 CEST 2016 Client connected!
+Fri Jul 15 13:12:18 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 13:12:18 CEST 2016 Client connected!
+Fri Jul 15 13:13:35 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 13:13:35 CEST 2016 Client connected!
+Fri Jul 15 13:14:03 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 13:14:03 CEST 2016 Client connected!
+Fri Jul 15 13:17:01 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 13:17:01 CEST 2016 Client connected!
+Fri Jul 15 13:18:03 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 13:18:03 CEST 2016 Client connected!
+Fri Jul 15 13:18:49 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 13:18:49 CEST 2016 Client connected!
+Fri Jul 15 13:18:56 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 13:18:56 CEST 2016 Client connected!
+Fri Jul 15 13:19:34 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 13:19:34 CEST 2016 Client connected!
+Fri Jul 15 13:21:04 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 13:21:04 CEST 2016 Client connected!
+Fri Jul 15 13:21:34 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 13:21:34 CEST 2016 Client connected!
+Fri Jul 15 13:29:25 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 13:29:25 CEST 2016 Client connected!
+Fri Jul 15 13:29:34 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 13:29:34 CEST 2016 Client connected!
+Fri Jul 15 13:37:57 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 13:37:57 CEST 2016 Client connected!
+Fri Jul 15 13:46:37 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 13:46:37 CEST 2016 Client connected!
+Fri Jul 15 13:47:47 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 13:47:47 CEST 2016 Client connected!
+Fri Jul 15 13:54:46 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 13:54:46 CEST 2016 Client connected!
+Fri Jul 15 13:55:00 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 13:55:00 CEST 2016 Client connected!
+Fri Jul 15 13:55:11 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 13:55:11 CEST 2016 Client connected!
+Fri Jul 15 13:55:28 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 13:55:28 CEST 2016 Client connected!
+Fri Jul 15 13:56:08 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 13:56:08 CEST 2016 Client connected!
+Fri Jul 15 13:58:31 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 13:58:31 CEST 2016 Client connected!
+Fri Jul 15 13:58:54 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 13:58:54 CEST 2016 Client connected!
+Fri Jul 15 13:59:03 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 13:59:03 CEST 2016 Client connected!
+Fri Jul 15 13:59:55 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 13:59:55 CEST 2016 Client connected!
+Fri Jul 15 14:00:42 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 14:00:42 CEST 2016 Client connected!
+Fri Jul 15 14:01:04 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 14:01:04 CEST 2016 Client connected!
+Fri Jul 15 14:01:39 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 14:01:39 CEST 2016 Client connected!
+Fri Jul 15 14:02:50 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 14:02:50 CEST 2016 Client connected!
+Fri Jul 15 14:02:59 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 14:02:59 CEST 2016 Client connected!
+Fri Jul 15 14:05:38 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 14:05:38 CEST 2016 Client connected!
+Fri Jul 15 14:05:45 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 14:05:45 CEST 2016 Client connected!
+Fri Jul 15 14:06:20 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 14:06:20 CEST 2016 Client connected!
+Fri Jul 15 14:07:22 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 14:07:22 CEST 2016 Client connected!
+Fri Jul 15 14:08:56 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 14:08:56 CEST 2016 Client connected!
+Fri Jul 15 14:09:38 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 14:09:38 CEST 2016 Client connected!
+Fri Jul 15 14:10:36 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 14:10:36 CEST 2016 Client connected!
+Fri Jul 15 14:11:21 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 14:11:21 CEST 2016 Client connected!
+Fri Jul 15 14:11:29 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 14:11:29 CEST 2016 Client connected!
+Fri Jul 15 14:12:21 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 14:12:21 CEST 2016 Client connected!
+Fri Jul 15 14:14:19 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 14:14:19 CEST 2016 Client connected!
+Fri Jul 15 14:15:16 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 14:15:16 CEST 2016 Client connected!
+Fri Jul 15 14:15:26 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 14:15:26 CEST 2016 Client connected!
+Fri Jul 15 14:15:51 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 14:15:51 CEST 2016 Client connected!
+Fri Jul 15 14:16:26 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 14:16:26 CEST 2016 Client connected!
+Fri Jul 15 14:18:57 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 14:18:57 CEST 2016 Client connected!
+Fri Jul 15 14:20:27 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 14:20:27 CEST 2016 Client connected!
+Fri Jul 15 14:20:56 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 14:20:56 CEST 2016 Client connected!
+Fri Jul 15 14:22:01 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 14:22:01 CEST 2016 Client connected!
+Fri Jul 15 14:23:09 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 14:23:09 CEST 2016 Client connected!
+Fri Jul 15 14:23:24 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 14:23:24 CEST 2016 Client connected!
+Fri Jul 15 14:23:52 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 14:23:52 CEST 2016 Client connected!
+Fri Jul 15 14:26:26 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 14:26:26 CEST 2016 Client connected!
+Fri Jul 15 14:35:19 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 14:35:19 CEST 2016 Client connected!
+Fri Jul 15 14:38:56 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 14:38:56 CEST 2016 Client connected!
+Fri Jul 15 14:41:47 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 14:41:47 CEST 2016 Client connected!
+Fri Jul 15 14:43:04 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 14:43:04 CEST 2016 Client connected!
+Fri Jul 15 14:43:55 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 14:43:55 CEST 2016 Client connected!
+Fri Jul 15 14:44:02 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 14:44:02 CEST 2016 Client connected!
+Fri Jul 15 14:44:30 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 14:44:30 CEST 2016 Client connected!
+Fri Jul 15 14:44:57 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 14:44:57 CEST 2016 Client connected!
+Fri Jul 15 15:29:55 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 15:29:55 CEST 2016 Client connected!
+Fri Jul 15 15:31:33 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 15:31:33 CEST 2016 Client connected!
+Fri Jul 15 16:43:32 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 16:43:32 CEST 2016 Client connected!
+Fri Jul 15 16:47:27 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 16:47:27 CEST 2016 Client connected!
+Fri Jul 15 16:49:06 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 16:49:06 CEST 2016 Client connected!
+Fri Jul 15 16:52:00 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 16:52:00 CEST 2016 Client connected!
+
+Fri Jul 15 21:23:40 CEST 2016 Running
+Fri Jul 15 21:24:17 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Fri Jul 15 21:24:17 CEST 2016 Client connected!
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Sat Jul 16 15:12:20 CEST 2016 Running
+Sat Jul 16 15:12:24 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Sat Jul 16 15:12:24 CEST 2016 Client connected!
+Sat Jul 16 15:14:20 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Sat Jul 16 15:14:20 CEST 2016 Client connected!
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Tue Jul 19 16:07:14 CEST 2016 Running
+Tue Jul 19 16:07:19 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Jul 19 16:07:19 CEST 2016 Client connected!
+Tue Jul 19 16:12:18 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Jul 19 16:12:18 CEST 2016 Client connected!
+Tue Jul 19 16:43:13 CEST 2016 Client connected!
+Tue Jul 19 16:43:13 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Jul 19 16:52:10 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Jul 19 16:52:10 CEST 2016 Client connected!
+Tue Jul 19 16:57:53 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Jul 19 16:57:53 CEST 2016 Client connected!
+Tue Jul 19 19:32:43 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Jul 19 19:32:43 CEST 2016 Client connected!
+Tue Jul 19 21:49:04 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Jul 19 21:49:04 CEST 2016 Client connected!
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Thu Jul 21 21:13:45 CEST 2016 Running
+Thu Jul 21 21:15:20 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Thu Jul 21 21:15:20 CEST 2016 Client connected!
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Sun Jul 24 16:08:51 CEST 2016 Running
+Sun Jul 24 16:09:17 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Sun Jul 24 16:09:17 CEST 2016 Client connected!
+Sun Jul 24 16:14:24 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Sun Jul 24 16:14:24 CEST 2016 Client connected!
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Mon Jul 25 20:30:39 CEST 2016 Running
+Mon Jul 25 20:32:08 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Mon Jul 25 20:32:08 CEST 2016 Client connected!
+Mon Jul 25 20:33:51 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Mon Jul 25 20:33:51 CEST 2016 Client connected!
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Wed Aug 17 13:36:56 CEST 2016 Running
+Wed Aug 17 13:37:41 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Wed Aug 17 13:37:41 CEST 2016 Client connected!
+Wed Aug 17 16:29:51 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Wed Aug 17 16:29:51 CEST 2016 Client connected!
+Wed Aug 17 17:07:30 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Wed Aug 17 17:07:30 CEST 2016 Client connected!
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Sat Aug 27 13:50:55 CEST 2016 Running
+Sat Aug 27 13:50:58 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Sat Aug 27 13:50:58 CEST 2016 Client connected!
+Sat Aug 27 13:53:20 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Sat Aug 27 13:53:20 CEST 2016 Client connected!
+
+Tue Jan 12 00:33:41 CET 2010 Unable to connect to database, check you created correctly and db user can connect to it!
+EXCEPTION: Access denied for user 'root'@'localhost' (using password: NO)
+--------------------------------------
+com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
+com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3878)
+com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3814)
+com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1694)
+com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1215)
+com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2255)
+com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2286)
+com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2085)
+com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:795)
+com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:327)
+java.sql.DriverManager.getConnection(DriverManager.java:664)
+java.sql.DriverManager.getConnection(DriverManager.java:208)
+com.j256.ormlite.jdbc.JdbcConnectionSource.makeConnection(JdbcConnectionSource.java:232)
+com.j256.ormlite.jdbc.JdbcConnectionSource.getReadWriteConnection(JdbcConnectionSource.java:174)
+com.j256.ormlite.table.TableUtils.doCreateTable(TableUtils.java:438)
+com.j256.ormlite.table.TableUtils.createTable(TableUtils.java:220)
+com.j256.ormlite.table.TableUtils.createTableIfNotExists(TableUtils.java:61)
+server.CommandPrompt.startServer(CommandPrompt.java:107)
+server.CommandPrompt.commandReceived(CommandPrompt.java:43)
+main.ServerApplication.mainThread(ServerApplication.java:52)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Tue Jan 12 00:39:11 CET 2010 Unable to connect to database, check you created correctly and db user can connect to it!
+EXCEPTION: Access denied for user 'root'@'localhost' (using password: NO)
+--------------------------------------
+com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
+com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3878)
+com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3814)
+com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1694)
+com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1215)
+com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2255)
+com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2286)
+com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2085)
+com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:795)
+com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:327)
+java.sql.DriverManager.getConnection(DriverManager.java:664)
+java.sql.DriverManager.getConnection(DriverManager.java:208)
+com.j256.ormlite.jdbc.JdbcConnectionSource.makeConnection(JdbcConnectionSource.java:232)
+com.j256.ormlite.jdbc.JdbcConnectionSource.getReadWriteConnection(JdbcConnectionSource.java:174)
+com.j256.ormlite.table.TableUtils.doCreateTable(TableUtils.java:438)
+com.j256.ormlite.table.TableUtils.createTable(TableUtils.java:220)
+com.j256.ormlite.table.TableUtils.createTableIfNotExists(TableUtils.java:61)
+server.CommandPrompt.startServer(CommandPrompt.java:107)
+server.CommandPrompt.commandReceived(CommandPrompt.java:43)
+main.ServerApplication.mainThread(ServerApplication.java:52)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Tue Jan 12 00:41:04 CET 2010 Unable to connect to database, check you created correctly and db user can connect to it!
+EXCEPTION: Access denied for user 'root?password=admin'@'localhost' (using password: NO)
+--------------------------------------
+com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
+com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3878)
+com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3814)
+com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1694)
+com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1215)
+com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2255)
+com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2286)
+com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2085)
+com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:795)
+com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:327)
+java.sql.DriverManager.getConnection(DriverManager.java:664)
+java.sql.DriverManager.getConnection(DriverManager.java:208)
+com.j256.ormlite.jdbc.JdbcConnectionSource.makeConnection(JdbcConnectionSource.java:232)
+com.j256.ormlite.jdbc.JdbcConnectionSource.getReadWriteConnection(JdbcConnectionSource.java:174)
+com.j256.ormlite.table.TableUtils.doCreateTable(TableUtils.java:438)
+com.j256.ormlite.table.TableUtils.createTable(TableUtils.java:220)
+com.j256.ormlite.table.TableUtils.createTableIfNotExists(TableUtils.java:61)
+server.CommandPrompt.startServer(CommandPrompt.java:107)
+server.CommandPrompt.commandReceived(CommandPrompt.java:43)
+main.ServerApplication.mainThread(ServerApplication.java:52)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Tue Jan 12 00:41:47 CET 2010 Running
+
+Tue Jan 12 00:42:09 CET 2010 Running
+Tue Jan 12 00:43:07 CET 2010 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Jan 12 00:43:07 CET 2010 Client connected!
+Tue Jan 12 00:50:40 CET 2010 Connection on server thread!192.168.1.5
+Tue Jan 12 00:50:40 CET 2010 Client connected!
+
+Tue Jan 12 01:23:59 CET 2010 Running
+Sat Aug 27 21:27:15 CEST 2016 Connection on server thread!192.168.1.5
+Sat Aug 27 21:27:15 CEST 2016 Client connected!
+EXCEPTION: Communications link failure
+
+The last packet successfully received from the server was 209 070 209 463 milliseconds ago.  The last packet sent successfully to the server was 19 milliseconds ago.
+--------------------------------------
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:981)
+com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3465)
+com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3365)
+com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3805)
+com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2478)
+com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2625)
+com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2551)
+com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1962)
+com.j256.ormlite.jdbc.JdbcCompiledStatement.runQuery(JdbcCompiledStatement.java:55)
+com.j256.ormlite.stmt.SelectIterator.<init>(SelectIterator.java:55)
+com.j256.ormlite.stmt.StatementExecutor.buildIterator(StatementExecutor.java:194)
+com.j256.ormlite.stmt.StatementExecutor.query(StatementExecutor.java:153)
+com.j256.ormlite.dao.BaseDaoImpl.query(BaseDaoImpl.java:245)
+com.j256.ormlite.stmt.QueryBuilder.query(QueryBuilder.java:262)
+com.j256.ormlite.stmt.Where.query(Where.java:480)
+handlers.LoginRequest.onRecive(LoginRequest.java:34)
+server.Router.onRecive(Router.java:32)
+thread.ClientThread.receive(ClientThread.java:84)
+thread.ClientThread.run(ClientThread.java:48)
+
+EXCEPTION: Connection has already been closed
+--------------------------------------
+com.j256.ormlite.jdbc.JdbcConnectionSource.getReadWriteConnection(JdbcConnectionSource.java:169)
+com.j256.ormlite.jdbc.JdbcConnectionSource.getReadOnlyConnection(JdbcConnectionSource.java:160)
+com.j256.ormlite.stmt.StatementExecutor.buildIterator(StatementExecutor.java:190)
+com.j256.ormlite.stmt.StatementExecutor.query(StatementExecutor.java:153)
+com.j256.ormlite.dao.BaseDaoImpl.query(BaseDaoImpl.java:245)
+com.j256.ormlite.stmt.QueryBuilder.query(QueryBuilder.java:262)
+com.j256.ormlite.stmt.Where.query(Where.java:480)
+handlers.LoginRequest.onRecive(LoginRequest.java:34)
+server.Router.onRecive(Router.java:32)
+thread.ClientThread.receive(ClientThread.java:84)
+thread.ClientThread.run(ClientThread.java:48)
+
+EXCEPTION: Connection has already been closed
+--------------------------------------
+com.j256.ormlite.jdbc.JdbcConnectionSource.getReadWriteConnection(JdbcConnectionSource.java:169)
+com.j256.ormlite.jdbc.JdbcConnectionSource.getReadOnlyConnection(JdbcConnectionSource.java:160)
+com.j256.ormlite.stmt.StatementExecutor.buildIterator(StatementExecutor.java:190)
+com.j256.ormlite.stmt.StatementExecutor.query(StatementExecutor.java:153)
+com.j256.ormlite.dao.BaseDaoImpl.query(BaseDaoImpl.java:245)
+com.j256.ormlite.stmt.QueryBuilder.query(QueryBuilder.java:262)
+com.j256.ormlite.stmt.Where.query(Where.java:480)
+handlers.LoginRequest.onRecive(LoginRequest.java:34)
+server.Router.onRecive(Router.java:32)
+thread.ClientThread.receive(ClientThread.java:84)
+thread.ClientThread.run(ClientThread.java:48)
+
+EXCEPTION: Connection has already been closed
+--------------------------------------
+com.j256.ormlite.jdbc.JdbcConnectionSource.getReadWriteConnection(JdbcConnectionSource.java:169)
+com.j256.ormlite.jdbc.JdbcConnectionSource.getReadOnlyConnection(JdbcConnectionSource.java:160)
+com.j256.ormlite.stmt.StatementExecutor.buildIterator(StatementExecutor.java:190)
+com.j256.ormlite.stmt.StatementExecutor.query(StatementExecutor.java:153)
+com.j256.ormlite.dao.BaseDaoImpl.query(BaseDaoImpl.java:245)
+com.j256.ormlite.stmt.QueryBuilder.query(QueryBuilder.java:262)
+com.j256.ormlite.stmt.Where.query(Where.java:480)
+handlers.LoginRequest.onRecive(LoginRequest.java:34)
+server.Router.onRecive(Router.java:32)
+thread.ClientThread.receive(ClientThread.java:84)
+thread.ClientThread.run(ClientThread.java:48)
+
+EXCEPTION: Connection has already been closed
+--------------------------------------
+com.j256.ormlite.jdbc.JdbcConnectionSource.getReadWriteConnection(JdbcConnectionSource.java:169)
+com.j256.ormlite.jdbc.JdbcConnectionSource.getReadOnlyConnection(JdbcConnectionSource.java:160)
+com.j256.ormlite.stmt.StatementExecutor.buildIterator(StatementExecutor.java:190)
+com.j256.ormlite.stmt.StatementExecutor.query(StatementExecutor.java:153)
+com.j256.ormlite.dao.BaseDaoImpl.query(BaseDaoImpl.java:245)
+com.j256.ormlite.stmt.QueryBuilder.query(QueryBuilder.java:262)
+com.j256.ormlite.stmt.Where.query(Where.java:480)
+handlers.LoginRequest.onRecive(LoginRequest.java:34)
+server.Router.onRecive(Router.java:32)
+thread.ClientThread.receive(ClientThread.java:84)
+thread.ClientThread.run(ClientThread.java:48)
+
+EXCEPTION: Connection has already been closed
+--------------------------------------
+com.j256.ormlite.jdbc.JdbcConnectionSource.getReadWriteConnection(JdbcConnectionSource.java:169)
+com.j256.ormlite.jdbc.JdbcConnectionSource.getReadOnlyConnection(JdbcConnectionSource.java:160)
+com.j256.ormlite.stmt.StatementExecutor.buildIterator(StatementExecutor.java:190)
+com.j256.ormlite.stmt.StatementExecutor.query(StatementExecutor.java:153)
+com.j256.ormlite.dao.BaseDaoImpl.query(BaseDaoImpl.java:245)
+com.j256.ormlite.stmt.QueryBuilder.query(QueryBuilder.java:262)
+com.j256.ormlite.stmt.Where.query(Where.java:480)
+handlers.LoginRequest.onRecive(LoginRequest.java:34)
+server.Router.onRecive(Router.java:32)
+thread.ClientThread.receive(ClientThread.java:84)
+thread.ClientThread.run(ClientThread.java:48)
+
+EXCEPTION: Connection has already been closed
+--------------------------------------
+com.j256.ormlite.jdbc.JdbcConnectionSource.getReadWriteConnection(JdbcConnectionSource.java:169)
+com.j256.ormlite.jdbc.JdbcConnectionSource.getReadOnlyConnection(JdbcConnectionSource.java:160)
+com.j256.ormlite.stmt.StatementExecutor.buildIterator(StatementExecutor.java:190)
+com.j256.ormlite.stmt.StatementExecutor.query(StatementExecutor.java:153)
+com.j256.ormlite.dao.BaseDaoImpl.query(BaseDaoImpl.java:245)
+com.j256.ormlite.stmt.QueryBuilder.query(QueryBuilder.java:262)
+com.j256.ormlite.stmt.Where.query(Where.java:480)
+handlers.LoginRequest.onRecive(LoginRequest.java:34)
+server.Router.onRecive(Router.java:32)
+thread.ClientThread.receive(ClientThread.java:84)
+thread.ClientThread.run(ClientThread.java:48)
+
+EXCEPTION: Connection has already been closed
+--------------------------------------
+com.j256.ormlite.jdbc.JdbcConnectionSource.getReadWriteConnection(JdbcConnectionSource.java:169)
+com.j256.ormlite.jdbc.JdbcConnectionSource.getReadOnlyConnection(JdbcConnectionSource.java:160)
+com.j256.ormlite.stmt.StatementExecutor.buildIterator(StatementExecutor.java:190)
+com.j256.ormlite.stmt.StatementExecutor.query(StatementExecutor.java:153)
+com.j256.ormlite.dao.BaseDaoImpl.query(BaseDaoImpl.java:245)
+com.j256.ormlite.stmt.QueryBuilder.query(QueryBuilder.java:262)
+com.j256.ormlite.stmt.Where.query(Where.java:480)
+handlers.LoginRequest.onRecive(LoginRequest.java:34)
+server.Router.onRecive(Router.java:32)
+thread.ClientThread.receive(ClientThread.java:84)
+thread.ClientThread.run(ClientThread.java:48)
+
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Sat Aug 27 21:28:53 CEST 2016 Running
+Sat Aug 27 21:29:04 CEST 2016 Connection on server thread!192.168.1.5
+Sat Aug 27 21:29:04 CEST 2016 Client connected!
+
+EXCEPTION: Address already in use: JVM_Bind
+--------------------------------------
+java.net.DualStackPlainSocketImpl.bind0(Native Method)
+java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+java.net.ServerSocket.bind(ServerSocket.java:375)
+java.net.ServerSocket.<init>(ServerSocket.java:237)
+java.net.ServerSocket.<init>(ServerSocket.java:128)
+thread.ServeThread.Init(ServeThread.java:40)
+server.CommandPrompt.startServer(CommandPrompt.java:113)
+server.CommandPrompt.commandReceived(CommandPrompt.java:39)
+main.ServerApplication.mainThread(ServerApplication.java:52)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:16)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+Sat Aug 27 22:06:42 CEST 2016 Running
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:16)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:15)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Sat Aug 27 22:07:25 CEST 2016 Running
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:16)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Sat Aug 27 22:08:35 CEST 2016 Running
+Sat Aug 27 22:10:09 CEST 2016 Server shutdown!
+
+Sat Aug 27 22:13:49 CEST 2016 Running
+
+EXCEPTION: Address already in use: JVM_Bind
+--------------------------------------
+java.net.DualStackPlainSocketImpl.bind0(Native Method)
+java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+java.net.ServerSocket.bind(ServerSocket.java:375)
+java.net.ServerSocket.<init>(ServerSocket.java:237)
+java.net.ServerSocket.<init>(ServerSocket.java:128)
+thread.ServeThread.Init(ServeThread.java:40)
+server.CommandPrompt.startServer(CommandPrompt.java:113)
+server.CommandPrompt.commandReceived(CommandPrompt.java:39)
+main.ServerApplication.mainThread(ServerApplication.java:52)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:17)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+Sun Aug 28 00:09:53 CEST 2016 Running
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:17)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Sun Aug 28 00:10:32 CEST 2016 Running
+Sun Aug 28 00:12:52 CEST 2016 Connection on server thread!192.168.1.5
+Sun Aug 28 00:12:52 CEST 2016 Client connected!
+Sun Aug 28 00:13:56 CEST 2016 Connection on server thread!192.168.1.5
+Sun Aug 28 00:13:56 CEST 2016 Client connected!
+Sun Aug 28 00:14:50 CEST 2016 Connection on server thread!192.168.1.5
+Sun Aug 28 00:14:50 CEST 2016 Client connected!
+Sun Aug 28 00:14:58 CEST 2016 Connection on server thread!192.168.1.5
+Sun Aug 28 00:14:58 CEST 2016 Client connected!
+Sun Aug 28 00:16:47 CEST 2016 Connection on server thread!192.168.1.5
+Sun Aug 28 00:16:47 CEST 2016 Client connected!
+Sun Aug 28 00:16:53 CEST 2016 Connection on server thread!192.168.1.5
+Sun Aug 28 00:16:53 CEST 2016 Client connected!
+Sun Aug 28 00:16:54 CEST 2016 Very small dick
+Sun Aug 28 00:18:10 CEST 2016 Connection on server thread!192.168.1.5
+Sun Aug 28 00:18:10 CEST 2016 Client connected!
+Sun Aug 28 00:18:23 CEST 2016 Connection on server thread!192.168.1.5
+Sun Aug 28 00:18:23 CEST 2016 Client connected!
+EXCEPTION: Software caused connection abort: socket write error
+--------------------------------------
+java.net.SocketOutputStream.socketWrite0(Native Method)
+java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:109)
+java.net.SocketOutputStream.write(SocketOutputStream.java:141)
+thread.ClientThread.send(ClientThread.java:91)
+interfaces.RequestHandler.send(RequestHandler.java:38)
+handlers.SearchRequest.onRecive(SearchRequest.java:50)
+server.Router.onRecive(Router.java:32)
+thread.ClientThread.receive(ClientThread.java:84)
+thread.ClientThread.run(ClientThread.java:48)
+
+EXCEPTION: Software caused connection abort: socket write error
+--------------------------------------
+java.net.SocketOutputStream.socketWrite0(Native Method)
+java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:109)
+java.net.SocketOutputStream.write(SocketOutputStream.java:141)
+thread.ClientThread.send(ClientThread.java:91)
+interfaces.RequestHandler.send(RequestHandler.java:38)
+handlers.SearchRequest.onRecive(SearchRequest.java:50)
+server.Router.onRecive(Router.java:32)
+thread.ClientThread.receive(ClientThread.java:84)
+thread.ClientThread.run(ClientThread.java:48)
+
+Sun Aug 28 00:18:24 CEST 2016 Very big dick
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:17)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Sun Aug 28 00:21:21 CEST 2016 Running
+Sun Aug 28 00:21:38 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Sun Aug 28 00:21:38 CEST 2016 Client connected!
+Sun Aug 28 00:23:26 CEST 2016 Connection on server thread!192.168.1.5
+Sun Aug 28 00:23:26 CEST 2016 Client connected!
+Sun Aug 28 00:23:32 CEST 2016 Connection on server thread!192.168.1.5
+Sun Aug 28 00:23:32 CEST 2016 Client connected!
+Sun Aug 28 00:23:59 CEST 2016 Very small dick
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:17)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Sun Aug 28 00:25:28 CEST 2016 Running
+Sun Aug 28 00:25:34 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Sun Aug 28 00:25:34 CEST 2016 Client connected!
+Sun Aug 28 00:26:07 CEST 2016 Very small dick
+Sun Aug 28 00:27:27 CEST 2016 Connection on server thread!192.168.1.5
+Sun Aug 28 00:27:27 CEST 2016 Client connected!
+Sun Aug 28 00:27:27 CEST 2016 Very big dick
+Sun Aug 28 00:30:55 CEST 2016 Connection on server thread!192.168.1.5
+Sun Aug 28 00:30:55 CEST 2016 Client connected!
+Sun Aug 28 00:31:06 CEST 2016 Connection on server thread!192.168.1.5
+Sun Aug 28 00:31:06 CEST 2016 Client connected!
+Sun Aug 28 00:31:17 CEST 2016 Very big dick
+Sun Aug 28 00:31:36 CEST 2016 Connection on server thread!192.168.1.5
+Sun Aug 28 00:31:36 CEST 2016 Client connected!
+Sun Aug 28 00:31:42 CEST 2016 Connection on server thread!192.168.1.5
+Sun Aug 28 00:31:42 CEST 2016 Client connected!
+EXCEPTION: Software caused connection abort: socket write error
+--------------------------------------
+java.net.SocketOutputStream.socketWrite0(Native Method)
+java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:109)
+java.net.SocketOutputStream.write(SocketOutputStream.java:141)
+thread.ClientThread.send(ClientThread.java:91)
+interfaces.RequestHandler.send(RequestHandler.java:38)
+handlers.SearchRequest.onRecive(SearchRequest.java:50)
+server.Router.onRecive(Router.java:32)
+thread.ClientThread.receive(ClientThread.java:84)
+thread.ClientThread.run(ClientThread.java:48)
+
+Sun Aug 28 00:31:49 CEST 2016 Very big dick
+
+Tue Jan 12 01:43:57 CET 2010 Running
+Tue Jan 12 01:44:02 CET 2010 Connection on server thread!198.199.98.246
+Tue Jan 12 01:44:02 CET 2010 Client connected!
+Tue Jan 12 01:44:05 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 01:44:05 CET 2010 Client connected!
+EXCEPTION: Socket is closed
+Tue Jan 12 01:44:51 CET 2010 Server shutdown!
+
+Tue Jan 12 01:47:09 CET 2010 Running
+Tue Jan 12 01:47:13 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 01:47:13 CET 2010 Client connected!
+Tue Jan 12 01:48:04 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 01:48:04 CET 2010 Client connected!
+Tue Jan 12 01:48:28 CET 2010 Very small dick
+Tue Jan 12 01:49:04 CET 2010 Server shutdown!
+
+Tue Jan 12 01:53:43 CET 2010 Running
+Tue Jan 12 01:53:51 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 01:53:51 CET 2010 Client connected!
+Tue Jan 12 01:54:30 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 01:54:30 CET 2010 Client connected!
+Tue Jan 12 01:54:37 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 01:54:37 CET 2010 Client connected!
+Tue Jan 12 01:54:38 CET 2010 Very small dick
+Tue Jan 12 01:55:09 CET 2010 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Jan 12 01:55:09 CET 2010 Client connected!
+Tue Jan 12 01:57:37 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 01:57:37 CET 2010 Client connected!
+Tue Jan 12 01:57:51 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 01:57:51 CET 2010 Client connected!
+EXCEPTION: Software caused connection abort: socket write error
+--------------------------------------
+java.net.SocketOutputStream.socketWrite0(Native Method)
+java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:109)
+java.net.SocketOutputStream.write(SocketOutputStream.java:141)
+thread.ClientThread.send(ClientThread.java:91)
+interfaces.RequestHandler.send(RequestHandler.java:38)
+handlers.SearchRequest.onRecive(SearchRequest.java:50)
+server.Router.onRecive(Router.java:32)
+thread.ClientThread.receive(ClientThread.java:84)
+thread.ClientThread.run(ClientThread.java:48)
+
+EXCEPTION: Software caused connection abort: socket write error
+--------------------------------------
+java.net.SocketOutputStream.socketWrite0(Native Method)
+java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:109)
+java.net.SocketOutputStream.write(SocketOutputStream.java:141)
+thread.ClientThread.send(ClientThread.java:91)
+interfaces.RequestHandler.send(RequestHandler.java:38)
+handlers.SearchRequest.onRecive(SearchRequest.java:50)
+server.Router.onRecive(Router.java:32)
+thread.ClientThread.receive(ClientThread.java:84)
+thread.ClientThread.run(ClientThread.java:48)
+
+Tue Jan 12 01:57:54 CET 2010 Very big dick
+Tue Jan 12 02:01:50 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 02:01:50 CET 2010 Client connected!
+Tue Jan 12 02:01:56 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 02:01:56 CET 2010 Client connected!
+Tue Jan 12 02:01:58 CET 2010 Very big dick
+Tue Jan 12 02:02:20 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 02:02:20 CET 2010 Client connected!
+Tue Jan 12 02:02:28 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 02:02:28 CET 2010 Client connected!
+Tue Jan 12 02:03:44 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 02:03:44 CET 2010 Client connected!
+Tue Jan 12 02:03:50 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 02:03:50 CET 2010 Client connected!
+Tue Jan 12 02:03:51 CET 2010 Very big dick
+Tue Jan 12 02:05:29 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 02:05:29 CET 2010 Client connected!
+Tue Jan 12 02:05:34 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 02:05:34 CET 2010 Client connected!
+Tue Jan 12 02:05:36 CET 2010 Very big dick
+Tue Jan 12 02:14:34 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 02:14:34 CET 2010 Client connected!
+Tue Jan 12 02:14:36 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 02:14:36 CET 2010 Client connected!
+Tue Jan 12 02:14:40 CET 2010 Very big dick
+Tue Jan 12 02:14:45 CET 2010 Very big dick
+Tue Jan 12 02:14:56 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 02:14:57 CET 2010 Client connected!
+Tue Jan 12 02:15:04 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 02:15:04 CET 2010 Client connected!
+Tue Jan 12 02:29:10 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 02:29:10 CET 2010 Client connected!
+Tue Jan 12 02:29:17 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 02:29:17 CET 2010 Client connected!
+EXCEPTION: Software caused connection abort: socket write error
+--------------------------------------
+java.net.SocketOutputStream.socketWrite0(Native Method)
+java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:109)
+java.net.SocketOutputStream.write(SocketOutputStream.java:141)
+thread.ClientThread.send(ClientThread.java:91)
+interfaces.RequestHandler.send(RequestHandler.java:38)
+handlers.SearchRequest.onRecive(SearchRequest.java:50)
+server.Router.onRecive(Router.java:32)
+thread.ClientThread.receive(ClientThread.java:84)
+thread.ClientThread.run(ClientThread.java:48)
+
+Tue Jan 12 02:29:17 CET 2010 Very big dick
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:17)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Tue Jan 12 02:50:23 CET 2010 Running
+Tue Jan 12 02:50:27 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 02:50:27 CET 2010 Client connected!
+Tue Jan 12 02:50:35 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 02:50:35 CET 2010 Client connected!
+Tue Jan 12 02:51:10 CET 2010 Very small dick
+Tue Jan 12 02:52:28 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 02:52:28 CET 2010 Client connected!
+Tue Jan 12 02:52:34 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 02:52:34 CET 2010 Client connected!
+EXCEPTION: Software caused connection abort: socket write error
+--------------------------------------
+java.net.SocketOutputStream.socketWrite0(Native Method)
+java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:109)
+java.net.SocketOutputStream.write(SocketOutputStream.java:141)
+thread.ClientThread.send(ClientThread.java:91)
+interfaces.RequestHandler.send(RequestHandler.java:38)
+handlers.SearchRequest.onRecive(SearchRequest.java:50)
+server.Router.onRecive(Router.java:32)
+thread.ClientThread.receive(ClientThread.java:84)
+thread.ClientThread.run(ClientThread.java:48)
+
+EXCEPTION: Software caused connection abort: socket write error
+--------------------------------------
+java.net.SocketOutputStream.socketWrite0(Native Method)
+java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:109)
+java.net.SocketOutputStream.write(SocketOutputStream.java:141)
+thread.ClientThread.send(ClientThread.java:91)
+interfaces.RequestHandler.send(RequestHandler.java:38)
+handlers.SearchRequest.onRecive(SearchRequest.java:50)
+server.Router.onRecive(Router.java:32)
+thread.ClientThread.receive(ClientThread.java:84)
+thread.ClientThread.run(ClientThread.java:48)
+
+Tue Jan 12 02:52:35 CET 2010 Very big dick
+
+Tue Jan 12 02:53:02 CET 2010 Running
+Tue Jan 12 02:53:09 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 02:53:09 CET 2010 Client connected!
+Tue Jan 12 02:53:15 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 02:53:15 CET 2010 Client connected!
+Tue Jan 12 02:53:18 CET 2010 Very small dick
+Tue Jan 12 02:54:23 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 02:54:23 CET 2010 Client connected!
+Tue Jan 12 02:54:28 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 02:54:28 CET 2010 Client connected!
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:17)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Tue Jan 12 02:55:01 CET 2010 Running
+Tue Jan 12 02:56:54 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 02:56:54 CET 2010 Client connected!
+Tue Jan 12 02:57:00 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 02:57:00 CET 2010 Client connected!
+Tue Jan 12 02:57:01 CET 2010 Very small dick
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:17)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Tue Jan 12 02:58:17 CET 2010 Running
+Tue Jan 12 02:58:23 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 02:58:23 CET 2010 Client connected!
+Tue Jan 12 02:58:29 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 02:58:29 CET 2010 Client connected!
+Tue Jan 12 02:58:30 CET 2010 Very small dick
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:17)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Tue Jan 12 03:01:15 CET 2010 Running
+Tue Jan 12 03:01:17 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 03:01:17 CET 2010 Client connected!
+Tue Jan 12 03:01:26 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 03:01:26 CET 2010 Client connected!
+Tue Jan 12 03:01:31 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 03:01:31 CET 2010 Client connected!
+Tue Jan 12 03:01:33 CET 2010 Very small dick
+Tue Jan 12 03:01:52 CET 2010 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Jan 12 03:01:52 CET 2010 Client connected!
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:17)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Tue Jan 12 03:03:34 CET 2010 Running
+Tue Jan 12 03:03:41 CET 2010 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Jan 12 03:03:41 CET 2010 Client connected!
+Tue Jan 12 03:04:01 CET 2010 Very small dick
+Tue Jan 12 03:04:13 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 03:04:13 CET 2010 Client connected!
+Tue Jan 12 03:04:18 CET 2010 Connection on server thread!31.46.240.22
+Tue Jan 12 03:04:18 CET 2010 Client connected!
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:17)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Tue Sep 13 18:15:04 CEST 2016 Unable to connect to database, check you created correctly and db user can connect to it!
+EXCEPTION: Unknown database 'inside_conflict_db'
+--------------------------------------
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+com.mysql.jdbc.Util.getInstance(Util.java:387)
+com.mysql.jdbc.SQLError.createSQLException(SQLError.java:939)
+com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3878)
+com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3814)
+com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1694)
+com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1215)
+com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2255)
+com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2286)
+com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2085)
+com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:795)
+com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:327)
+java.sql.DriverManager.getConnection(DriverManager.java:664)
+java.sql.DriverManager.getConnection(DriverManager.java:208)
+com.j256.ormlite.jdbc.JdbcConnectionSource.makeConnection(JdbcConnectionSource.java:232)
+com.j256.ormlite.jdbc.JdbcConnectionSource.getReadWriteConnection(JdbcConnectionSource.java:174)
+com.j256.ormlite.table.TableUtils.doCreateTable(TableUtils.java:438)
+com.j256.ormlite.table.TableUtils.createTable(TableUtils.java:220)
+com.j256.ormlite.table.TableUtils.createTableIfNotExists(TableUtils.java:61)
+server.CommandPrompt.startServer(CommandPrompt.java:103)
+server.CommandPrompt.commandReceived(CommandPrompt.java:39)
+main.ServerApplication.mainThread(ServerApplication.java:52)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:17)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+Tue Sep 13 18:16:38 CEST 2016 Running
+Tue Sep 13 18:17:13 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Sep 13 18:17:13 CEST 2016 Client connected!
+EXCEPTION: null
+--------------------------------------
+main.ServerApplication.mainThread(ServerApplication.java:51)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:17)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+Tue Sep 13 18:18:36 CEST 2016 Running
+Tue Sep 13 18:18:47 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Sep 13 18:18:47 CEST 2016 Client connected!
+Tue Sep 13 18:50:06 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Sep 13 18:50:06 CEST 2016 Client connected!
+Tue Sep 13 18:51:36 CEST 2016 Very small dick
+EXCEPTION: Software caused connection abort: socket write error
+--------------------------------------
+java.net.SocketOutputStream.socketWrite0(Native Method)
+java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:109)
+java.net.SocketOutputStream.write(SocketOutputStream.java:141)
+thread.ClientThread.send(ClientThread.java:91)
+interfaces.RequestHandler.send(RequestHandler.java:38)
+handlers.SearchRequest.onRecive(SearchRequest.java:50)
+server.Router.onRecive(Router.java:32)
+thread.ClientThread.receive(ClientThread.java:84)
+thread.ClientThread.run(ClientThread.java:48)
+
+
+Tue Sep 13 19:07:10 CEST 2016 Running
+Tue Sep 13 19:07:25 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Sep 13 19:07:25 CEST 2016 Client connected!
+
+Tue Sep 13 19:09:36 CEST 2016 Running
+Tue Sep 13 19:09:44 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Sep 13 19:09:44 CEST 2016 Client connected!
+Tue Sep 13 19:10:26 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Sep 13 19:10:26 CEST 2016 Client connected!
+Tue Sep 13 19:11:31 CEST 2016 Very small dick
+Tue Sep 13 19:12:59 CEST 2016 Very big dick
+
+Tue Sep 13 19:14:06 CEST 2016 Running
+Tue Sep 13 19:16:30 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Sep 13 19:16:30 CEST 2016 Client connected!
+Tue Sep 13 19:17:13 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Sep 13 19:17:13 CEST 2016 Client connected!
+Tue Sep 13 19:17:51 CEST 2016 Very small dick
+Tue Sep 13 19:18:06 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Sep 13 19:18:06 CEST 2016 Client connected!
+Tue Sep 13 19:19:28 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Sep 13 19:19:28 CEST 2016 Client connected!
+Tue Sep 13 19:21:36 CEST 2016 Very big dick
+Tue Sep 13 19:30:09 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Sep 13 19:30:09 CEST 2016 Client connected!
+
+Tue Sep 13 19:33:17 CEST 2016 Running
+Tue Sep 13 19:33:22 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Sep 13 19:33:23 CEST 2016 Client connected!
+Tue Sep 13 19:33:35 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Sep 13 19:33:35 CEST 2016 Client connected!
+Tue Sep 13 19:34:11 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Sep 13 19:34:11 CEST 2016 Client connected!
+
+Tue Sep 13 19:42:08 CEST 2016 Running
+Tue Sep 13 19:42:18 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Sep 13 19:42:18 CEST 2016 Client connected!
+EXCEPTION: Socket is closed
+--------------------------------------
+java.net.Socket.getOutputStream(Socket.java:943)
+thread.ClientThread.send(ClientThread.java:91)
+interfaces.RequestHandler.send(RequestHandler.java:39)
+handlers.LoginRequest.onRecive(LoginRequest.java:45)
+server.Router.onRecive(Router.java:36)
+thread.ClientThread.receive(ClientThread.java:84)
+thread.ClientThread.run(ClientThread.java:48)
+
+Tue Sep 13 19:42:42 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Sep 13 19:42:42 CEST 2016 Client connected!
+EXCEPTION: Socket is closed
+--------------------------------------
+java.net.Socket.getOutputStream(Socket.java:943)
+thread.ClientThread.send(ClientThread.java:91)
+interfaces.RequestHandler.send(RequestHandler.java:39)
+handlers.LoginRequest.onRecive(LoginRequest.java:45)
+server.Router.onRecive(Router.java:36)
+thread.ClientThread.receive(ClientThread.java:84)
+thread.ClientThread.run(ClientThread.java:48)
+
+Tue Sep 13 19:44:46 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Sep 13 19:44:46 CEST 2016 Client connected!
+
+Tue Sep 13 19:45:39 CEST 2016 Running
+Tue Sep 13 19:45:47 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Sep 13 19:45:47 CEST 2016 Client connected!
+EXCEPTION: Socket is closed
+--------------------------------------
+java.net.Socket.getOutputStream(Socket.java:943)
+thread.ClientThread.send(ClientThread.java:91)
+interfaces.RequestHandler.send(RequestHandler.java:39)
+handlers.LoginRequest.onRecive(LoginRequest.java:45)
+server.Router.onRecive(Router.java:36)
+thread.ClientThread.receive(ClientThread.java:84)
+thread.ClientThread.run(ClientThread.java:48)
+
+
+Tue Sep 13 19:47:01 CEST 2016 Running
+Tue Sep 13 19:47:10 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Sep 13 19:47:10 CEST 2016 Client connected!
+Tue Sep 13 19:47:22 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Sep 13 19:47:22 CEST 2016 Client connected!
+
+Tue Sep 13 19:49:05 CEST 2016 Running
+Tue Sep 13 19:49:10 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Sep 13 19:49:10 CEST 2016 Client connected!
+Tue Sep 13 19:49:25 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Sep 13 19:49:25 CEST 2016 Client connected!
+Tue Sep 13 21:24:37 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Sep 13 21:24:37 CEST 2016 Client connected!
+Tue Sep 13 21:24:42 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Sep 13 21:24:42 CEST 2016 Client connected!
+Tue Sep 13 21:25:19 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Sep 13 21:25:19 CEST 2016 Client connected!
+Tue Sep 13 21:26:29 CEST 2016 Very small dick
+Tue Sep 13 21:27:47 CEST 2016 Very big dick
+EXCEPTION: Socket is closed
+--------------------------------------
+java.net.Socket.getOutputStream(Socket.java:943)
+thread.ClientThread.send(ClientThread.java:91)
+interfaces.RequestHandler.send(RequestHandler.java:39)
+handlers.LoginRequest.onRecive(LoginRequest.java:45)
+server.Router.onRecive(Router.java:36)
+thread.ClientThread.receive(ClientThread.java:84)
+thread.ClientThread.run(ClientThread.java:48)
+
+Tue Sep 13 21:28:39 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Sep 13 21:28:39 CEST 2016 Client connected!
+
+Tue Sep 13 21:29:20 CEST 2016 Running
+Tue Sep 13 21:29:32 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Sep 13 21:29:32 CEST 2016 Client connected!
+Tue Sep 13 21:29:34 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Sep 13 21:29:34 CEST 2016 Client connected!
+Tue Sep 13 21:30:16 CEST 2016 Very small dick
+
+Tue Sep 13 21:33:08 CEST 2016 Running
+Tue Sep 13 21:33:11 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Sep 13 21:33:11 CEST 2016 Client connected!
+Tue Sep 13 21:33:12 CEST 2016 Connection on server thread!0:0:0:0:0:0:0:1
+Tue Sep 13 21:33:12 CEST 2016 Client connected!
+Tue Sep 13 21:33:56 CEST 2016 Very small dick
+
+Thu Nov 03 21:53:41 CET 2016 Running

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.j256.ormlite:ormlite-jdbc:4.35">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.j256.ormlite/ormlite-jdbc/4.35/34fa8d3084ddfd3bd6c978e81335c38febcb79b/ormlite-jdbc-4.35.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.j256.ormlite/ormlite-jdbc/4.35/5cb408a8b9366e669786f74b4b3e22c6e377b15e/ormlite-jdbc-4.35-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

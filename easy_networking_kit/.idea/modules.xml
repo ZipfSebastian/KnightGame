@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/easy_networking_kit.iml" filepath="$PROJECT_DIR$/easy_networking_kit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fighter_server/fighter_server.iml" filepath="$PROJECT_DIR$/fighter_server/fighter_server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gameServer/gameServer.iml" filepath="$PROJECT_DIR$/gameServer/gameServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/knightServer/knightServer.iml" filepath="$PROJECT_DIR$/knightServer/knightServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sharedModels/sharedModels.iml" filepath="$PROJECT_DIR$/sharedModels/sharedModels.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webServer/webServer.iml" filepath="$PROJECT_DIR$/webServer/webServer.iml" />
+    </modules>
+  </component>
+</project>

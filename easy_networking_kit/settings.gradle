@@ -1,0 +1,10 @@
+rootProject.name = 'easy_networking_kit'
+
+include 'gameServer'
+
+include 'webServer'
+
+include 'sharedModels'
+include 'fighter_server'
+include 'knightServer'
+

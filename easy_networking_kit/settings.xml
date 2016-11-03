@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GameServerConfig>
+    <DatabaseConfig>
+        <DatabaseURL>jdbc:mysql://127.0.0.1/strategy?user=root</DatabaseURL>
+    </DatabaseConfig>
+    <MailConfig>
+        <MailFrom>support.strategy.ddns.net</MailFrom>
+        <MailSender>strategy.ddns.net</MailSender>
+    </MailConfig>
+    <ServerSettings>
+        <TCPTimeOut>0</TCPTimeOut>
+        <TCPServeSleep>5</TCPServeSleep>
+        <UDPServeSleep>5</UDPServeSleep>
+        <TCPClientSleep>5</TCPClientSleep>
+        <UDPMaxPacketLength>2048</UDPMaxPacketLength>
+        <ServerPortSettings>
+            <UDPPort>65111</UDPPort>
+            <TCPPort>65112</TCPPort>
+        </ServerPortSettings>
+    </ServerSettings>
+
+    <MapperSettings>
+        <RequestMap>
+            <From>LoginRequest</From>
+            <To>handlers.LoginRequest</To>
+        </RequestMap>
+    </MapperSettings>
+    <LoggerSettings>
+        <SendEmail>ERROR</SendEmail>
+        <Write>File</Write>
+        <Write>Console</Write>
+    </LoggerSettings>
+    <Variables>
+        <Variable>
+            <Key>Test</Key>
+            <Value>MyTest</Value>
+        </Variable>
+    </Variables>
+</GameServerConfig>
