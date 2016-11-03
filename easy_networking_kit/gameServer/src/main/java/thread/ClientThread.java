@@ -1,5 +1,6 @@
 package thread;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.j256.ormlite.support.ConnectionSource;
 import constants.Properties;
 import server.Router;
@@ -23,8 +24,7 @@ public class ClientThread extends Thread {
     private long sleepTime;
     private Router router;
     private long lastUpdateTime;
-    private int timeOutCount;
-
+    private boolean isOnline;
 
 
     public ClientThread(Socket socket,Router router, ConnectionSource connectionSource, long sleepTime) {
@@ -43,6 +43,8 @@ public class ClientThread extends Thread {
     public void run() {
         super.run();
         Log.write("Client connected!");
+        isOnline = true;
+        lastUpdateTime = System.currentTimeMillis();
         while (run) {
             try {
                 receive();
@@ -57,19 +59,11 @@ public class ClientThread extends Thread {
     }
 
     private void timeOutIfNoResponse() {
-        if(System.currentTimeMillis() > lastUpdateTime + 10000){
-            lastUpdateTime = System.currentTimeMillis();
-            /*try {
-                send(DefaultMessages.PING_REQUEST + ";");
-            } catch (IOException e) {
-                Log.write(e.getMessage());
-            }
-            if(timeOutCount> Integer.parseInt(ServerVariables.getValue(Properties.PROP_TIME_OUT))) {
-                shutDown();
-                Log.write("Client time out!");
-            }else{
-                timeOutCount++;
-            }*/
+
+        if(System.currentTimeMillis() > lastUpdateTime
+                + Integer.parseInt(ServerVariables.getValue(Properties.PROP_TIME_OUT))){
+            shutDown();
+            Log.write("Client time out!");
         }
     }
 
@@ -78,9 +72,10 @@ public class ClientThread extends Thread {
             int avaible = socket.getInputStream().available();
             if (avaible > 0) {
                 lastUpdateTime = System.currentTimeMillis();
-                timeOutCount = 0;
                 String clientSentence = inFromClient.readLine();
-                System.out.println("REC: "+ clientSentence);
+                if(!clientSentence.contains("PingRequest")) {
+                    System.out.println("REC: " + clientSentence);
+                }
                 router.onRecive(clientSentence, this);
             }
         }
@@ -94,6 +89,7 @@ public class ClientThread extends Thread {
 
     public void shutDown() {
         try {
+            isOnline = false;
             inFromClient.close();
             socket.close();
         } catch (IOException e) {
@@ -109,5 +105,13 @@ public class ClientThread extends Thread {
 
     public Router getRouter() {
         return router;
+    }
+
+    public boolean isOnline() {
+        return isOnline;
+    }
+
+    public void setIsOnline(boolean isOnline) {
+        this.isOnline = isOnline;
     }
 }

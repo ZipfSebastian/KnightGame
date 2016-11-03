@@ -2071,3 +2071,80 @@ Tue Sep 13 21:33:12 CEST 2016 Client connected!
 Tue Sep 13 21:33:56 CEST 2016 Very small dick
 
 Thu Nov 03 21:53:41 CET 2016 Running
+
+Thu Nov 03 21:58:19 CET 2016 Running
+Thu Nov 03 21:58:27 CET 2016 Client connected!
+Thu Nov 03 21:58:27 CET 2016 Connection on server thread!127.0.0.1
+
+Thu Nov 03 22:09:25 CET 2016 Running
+Thu Nov 03 22:09:29 CET 2016 Connection on server thread!127.0.0.1
+Thu Nov 03 22:09:29 CET 2016 Client connected!
+Thu Nov 03 22:09:34 CET 2016 Connection on server thread!127.0.0.1
+Thu Nov 03 22:09:34 CET 2016 Client connected!
+Thu Nov 03 22:14:20 CET 2016 Connection on server thread!127.0.0.1
+Thu Nov 03 22:14:20 CET 2016 Client connected!
+Thu Nov 03 22:14:24 CET 2016 Connection on server thread!127.0.0.1
+Thu Nov 03 22:14:24 CET 2016 Client connected!
+Thu Nov 03 22:16:36 CET 2016 Connection on server thread!127.0.0.1
+Thu Nov 03 22:16:36 CET 2016 Client connected!
+Thu Nov 03 22:16:40 CET 2016 Connection on server thread!127.0.0.1
+Thu Nov 03 22:16:40 CET 2016 Client connected!
+Thu Nov 03 22:24:08 CET 2016 Connection on server thread!127.0.0.1
+Thu Nov 03 22:24:08 CET 2016 Client connected!
+Thu Nov 03 22:35:33 CET 2016 Server shutdown!
+EXCEPTION: Socket closed
+--------------------------------------
+
+Thu Nov 03 22:55:04 CET 2016 Running
+Thu Nov 03 22:58:48 CET 2016 Connection on server thread!127.0.0.1
+Thu Nov 03 22:58:48 CET 2016 Client connected!
+
+Thu Nov 03 23:00:02 CET 2016 Running
+Thu Nov 03 23:00:11 CET 2016 Connection on server thread!127.0.0.1
+Thu Nov 03 23:00:11 CET 2016 Client connected!
+Thu Nov 03 23:00:41 CET 2016 Connection reset
+
+Thu Nov 03 23:15:27 CET 2016 Running
+Thu Nov 03 23:15:38 CET 2016 Connection on server thread!127.0.0.1
+Thu Nov 03 23:15:38 CET 2016 Client connected!
+
+Thu Nov 03 23:16:07 CET 2016 Running
+Thu Nov 03 23:16:15 CET 2016 Connection on server thread!127.0.0.1
+Thu Nov 03 23:16:15 CET 2016 Client connected!
+
+Thu Nov 03 23:23:28 CET 2016 Running
+
+
+Thu Nov 03 23:24:33 CET 2016 Running
+Thu Nov 03 23:24:42 CET 2016 Connection on server thread!127.0.0.1
+Thu Nov 03 23:24:42 CET 2016 Client connected!
+Thu Nov 03 23:25:45 CET 2016 Connection reset
+Thu Nov 03 23:25:55 CET 2016 Broken pipe (Write failed)
+Thu Nov 03 23:25:55 CET 2016 Client time out!
+
+Thu Nov 03 23:35:54 CET 2016 Running
+Thu Nov 03 23:35:58 CET 2016 Connection on server thread!127.0.0.1
+Thu Nov 03 23:35:58 CET 2016 Client connected!
+Thu Nov 03 23:35:58 CET 2016 Client time out!
+
+Thu Nov 03 23:37:33 CET 2016 Running
+Thu Nov 03 23:37:43 CET 2016 Connection on server thread!127.0.0.1
+Thu Nov 03 23:37:43 CET 2016 Client connected!
+
+
+Thu Nov 03 23:38:24 CET 2016 Running
+
+Thu Nov 03 23:41:55 CET 2016 Running
+Thu Nov 03 23:42:05 CET 2016 Connection on server thread!127.0.0.1
+Thu Nov 03 23:42:05 CET 2016 Client connected!
+Thu Nov 03 23:42:06 CET 2016 Client time out!
+
+Thu Nov 03 23:44:57 CET 2016 Running
+Thu Nov 03 23:45:05 CET 2016 Connection on server thread!127.0.0.1
+Thu Nov 03 23:45:05 CET 2016 Client connected!
+Thu Nov 03 23:45:25 CET 2016 Client time out!
+
+Thu Nov 03 23:46:43 CET 2016 Running
+Thu Nov 03 23:46:50 CET 2016 Connection on server thread!127.0.0.1
+Thu Nov 03 23:46:50 CET 2016 Client connected!
+Thu Nov 03 23:47:10 CET 2016 Client time out!

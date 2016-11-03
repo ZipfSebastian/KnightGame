@@ -12,6 +12,7 @@ import java.util.List;
 public class Client {
     private SystemUser user;
     private ClientThread clientThread;
+    private int gameID;
 
     public Client(){
 
@@ -88,5 +89,18 @@ public class Client {
 
     public void setUdpSocket(DatagramSocket udpSocket) {
         this.udpSocket = udpSocket;
+    }
+
+    public int getGameID() {
+        return gameID;
+    }
+
+    public void setGameID(int gameID) {
+        this.gameID = gameID;
+    }
+
+    public boolean isOnline(){
+        return this.clientThread.isOnline();
+
     }
 }
