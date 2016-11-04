@@ -14,14 +14,14 @@ public class CharacterInputController : InputController {
 	public int attackDamage = 10;
 	public float hitDistance = 1.0f;
 	public Image attackButtonImage;
-	private CharacterController2D characterController;
+	//private CharacterController2D characterController;
 	public ThrowingDagger throwingDagger;
 	public float daggerSpeed = 1.0f;
 	public int daggerDamage = 10;
 	public float daggerYoffset = 0.7f;
 
 	void Start(){
-		characterController = GetComponent<CharacterController2D> ();
+		//characterController = GetComponent<CharacterController2D> ();
 	}
 
 	public override float GetHorizontal ()

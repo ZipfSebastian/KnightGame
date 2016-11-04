@@ -2148,3 +2148,223 @@ Thu Nov 03 23:46:43 CET 2016 Running
 Thu Nov 03 23:46:50 CET 2016 Connection on server thread!127.0.0.1
 Thu Nov 03 23:46:50 CET 2016 Client connected!
 Thu Nov 03 23:47:10 CET 2016 Client time out!
+
+Fri Nov 04 22:00:01 CET 2016 Unable to connect to database, check you created correctly and db user can connect to it!
+EXCEPTION: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+--------------------------------------
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:981)
+com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:339)
+com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2286)
+com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2085)
+com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:795)
+com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:327)
+java.sql.DriverManager.getConnection(DriverManager.java:664)
+java.sql.DriverManager.getConnection(DriverManager.java:208)
+com.j256.ormlite.jdbc.JdbcConnectionSource.makeConnection(JdbcConnectionSource.java:232)
+com.j256.ormlite.jdbc.JdbcConnectionSource.getReadWriteConnection(JdbcConnectionSource.java:174)
+com.j256.ormlite.table.TableUtils.doCreateTable(TableUtils.java:438)
+com.j256.ormlite.table.TableUtils.createTable(TableUtils.java:220)
+com.j256.ormlite.table.TableUtils.createTableIfNotExists(TableUtils.java:61)
+server.CommandPrompt.startServer(CommandPrompt.java:103)
+server.CommandPrompt.commandReceived(CommandPrompt.java:39)
+main.ServerApplication.mainThread(ServerApplication.java:52)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:9)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+Fri Nov 04 22:00:46 CET 2016 Running
+Fri Nov 04 22:00:52 CET 2016 Connection on server thread!127.0.0.1
+Fri Nov 04 22:00:52 CET 2016 Client connected!
+Fri Nov 04 22:00:53 CET 2016 Client time out!
+
+Fri Nov 04 22:03:01 CET 2016 Running
+Fri Nov 04 22:03:08 CET 2016 Connection on server thread!127.0.0.1
+Fri Nov 04 22:03:08 CET 2016 Client connected!
+Fri Nov 04 22:03:08 CET 2016 Client time out!
+Fri Nov 04 22:03:57 CET 2016 Connection on server thread!127.0.0.1
+Fri Nov 04 22:03:57 CET 2016 Client connected!
+Fri Nov 04 22:03:57 CET 2016 Client time out!
+
+Fri Nov 04 22:05:53 CET 2016 Running
+Fri Nov 04 22:06:03 CET 2016 Connection on server thread!127.0.0.1
+Fri Nov 04 22:06:03 CET 2016 Client connected!
+Fri Nov 04 22:06:04 CET 2016 Client time out!
+Fri Nov 04 22:06:23 CET 2016 Connection on server thread!127.0.0.1
+Fri Nov 04 22:06:23 CET 2016 Client connected!
+Fri Nov 04 22:06:23 CET 2016 Client time out!
+
+Fri Nov 04 22:07:28 CET 2016 Running
+Fri Nov 04 22:07:31 CET 2016 Client connected!
+Fri Nov 04 22:07:31 CET 2016 Connection on server thread!127.0.0.1
+Fri Nov 04 22:07:32 CET 2016 Client time out!
+Fri Nov 04 22:11:11 CET 2016 Connection on server thread!127.0.0.1
+Fri Nov 04 22:11:11 CET 2016 Client connected!
+Fri Nov 04 22:11:11 CET 2016 Client time out!
+Fri Nov 04 22:12:27 CET 2016 Connection on server thread!127.0.0.1
+Fri Nov 04 22:12:27 CET 2016 Client connected!
+Fri Nov 04 22:12:27 CET 2016 Client time out!
+Fri Nov 04 22:14:17 CET 2016 Connection on server thread!127.0.0.1
+Fri Nov 04 22:14:17 CET 2016 Client connected!
+Fri Nov 04 22:19:46 CET 2016 Connection on server thread!127.0.0.1
+Fri Nov 04 22:19:46 CET 2016 Client connected!
+Fri Nov 04 22:19:46 CET 2016 Connection on server thread!127.0.0.1
+Fri Nov 04 22:19:46 CET 2016 Client connected!
+Fri Nov 04 22:19:47 CET 2016 Connection on server thread!127.0.0.1
+Fri Nov 04 22:19:47 CET 2016 Client connected!
+Fri Nov 04 22:19:47 CET 2016 Connection on server thread!127.0.0.1
+Fri Nov 04 22:19:47 CET 2016 Client connected!
+Fri Nov 04 22:19:48 CET 2016 Connection on server thread!127.0.0.1
+Fri Nov 04 22:19:48 CET 2016 Client connected!
+Fri Nov 04 22:19:48 CET 2016 Client time out!
+Fri Nov 04 22:19:48 CET 2016 Client time out!Fri Nov 04 22:19:48 CET 2016 Client time out!
+
+Fri Nov 04 22:19:48 CET 2016 Client time out!
+Fri Nov 04 22:19:48 CET 2016 Client time out!
+Fri Nov 04 22:19:48 CET 2016 Client time out!
+Fri Nov 04 22:19:48 CET 2016 Connection on server thread!127.0.0.1
+Fri Nov 04 22:19:48 CET 2016 Client connected!
+Fri Nov 04 22:19:48 CET 2016 Client time out!
+
+Fri Nov 04 22:20:23 CET 2016 Running
+Fri Nov 04 22:20:28 CET 2016 Connection on server thread!127.0.0.1
+Fri Nov 04 22:20:28 CET 2016 Client connected!
+Fri Nov 04 22:20:43 CET 2016 Client time out!
+Fri Nov 04 22:21:03 CET 2016 Connection on server thread!127.0.0.1
+Fri Nov 04 22:21:03 CET 2016 Client connected!
+Fri Nov 04 22:21:21 CET 2016 Client time out!
+Fri Nov 04 22:22:21 CET 2016 Connection on server thread!127.0.0.1
+Fri Nov 04 22:22:21 CET 2016 Client connected!
+Fri Nov 04 22:22:31 CET 2016 Client time out!
+Fri Nov 04 22:22:42 CET 2016 Connection on server thread!127.0.0.1
+Fri Nov 04 22:22:42 CET 2016 Client connected!
+Fri Nov 04 22:23:20 CET 2016 Client time out!
+Fri Nov 04 22:23:47 CET 2016 Connection on server thread!127.0.0.1
+Fri Nov 04 22:23:47 CET 2016 Client connected!
+Fri Nov 04 22:23:56 CET 2016 Client time out!
+Fri Nov 04 22:24:06 CET 2016 Connection on server thread!127.0.0.1
+Fri Nov 04 22:24:06 CET 2016 Client connected!
+Fri Nov 04 22:24:23 CET 2016 Client time out!
+Fri Nov 04 23:12:51 CET 2016 Connection on server thread!127.0.0.1
+Fri Nov 04 23:12:51 CET 2016 Client connected!
+Fri Nov 04 23:13:05 CET 2016 Client time out!
+Fri Nov 04 23:24:48 CET 2016 Connection on server thread!127.0.0.1
+Fri Nov 04 23:24:48 CET 2016 Client connected!
+EXCEPTION: null
+--------------------------------------
+interfaces.RequestHandler.send(RequestHandler.java:39)
+handlers.SearchRequest.onRecive(SearchRequest.java:80)
+server.Router.onRecive(Router.java:36)
+thread.ClientThread.receive(ClientThread.java:79)
+thread.ClientThread.run(ClientThread.java:50)
+
+
+Fri Nov 04 23:31:49 CET 2016 Running
+Fri Nov 04 23:32:04 CET 2016 Connection on server thread!127.0.0.1
+Fri Nov 04 23:32:04 CET 2016 Client connected!
+Fri Nov 04 23:32:41 CET 2016 Client time out!
+Fri Nov 04 23:34:21 CET 2016 Connection on server thread!127.0.0.1
+Fri Nov 04 23:34:21 CET 2016 Client connected!
+Fri Nov 04 23:40:29 CET 2016 Client time out!
+Fri Nov 04 23:40:52 CET 2016 Connection on server thread!127.0.0.1
+Fri Nov 04 23:40:52 CET 2016 Client connected!
+Fri Nov 04 23:41:16 CET 2016 Client time out!
+Fri Nov 04 23:45:01 CET 2016 Connection on server thread!127.0.0.1
+Fri Nov 04 23:45:01 CET 2016 Client connected!
+Fri Nov 04 23:45:30 CET 2016 Client time out!
+Fri Nov 04 23:45:30 CET 2016 Connection on server thread!127.0.0.1
+Fri Nov 04 23:45:30 CET 2016 Client connected!
+Fri Nov 04 23:45:31 CET 2016 Client time out!
+Fri Nov 04 23:46:04 CET 2016 Connection on server thread!127.0.0.1
+Fri Nov 04 23:46:04 CET 2016 Client connected!
+Fri Nov 04 23:46:11 CET 2016 Client time out!
+Fri Nov 04 23:46:19 CET 2016 Connection on server thread!127.0.0.1
+Fri Nov 04 23:46:19 CET 2016 Client connected!
+Fri Nov 04 23:47:21 CET 2016 Client time out!
+Fri Nov 04 23:47:26 CET 2016 Connection on server thread!127.0.0.1
+Fri Nov 04 23:47:26 CET 2016 Client connected!
+Fri Nov 04 23:47:33 CET 2016 Client time out!
+
+Fri Nov 04 23:48:47 CET 2016 Running
+Fri Nov 04 23:48:56 CET 2016 Connection on server thread!127.0.0.1
+Fri Nov 04 23:48:56 CET 2016 Client connected!
+Fri Nov 04 23:49:01 CET 2016 Nem vagyunk meg
+Fri Nov 04 23:49:11 CET 2016 Client time out!
+
+Fri Nov 04 23:50:00 CET 2016 Running
+Fri Nov 04 23:50:07 CET 2016 Connection on server thread!127.0.0.1
+Fri Nov 04 23:50:07 CET 2016 Client connected!
+Fri Nov 04 23:50:15 CET 2016 Nem vagyunk meg
+Fri Nov 04 23:50:18 CET 2016 Nem vagyunk meg
+Fri Nov 04 23:50:20 CET 2016 Nem vagyunk meg
+Fri Nov 04 23:50:33 CET 2016 Client time out!
+Fri Nov 04 23:55:29 CET 2016 Connection on server thread!192.168.0.108
+Fri Nov 04 23:55:29 CET 2016 Client connected!
+Fri Nov 04 23:55:48 CET 2016 Nem vagyunk meg
+Fri Nov 04 23:56:01 CET 2016 Connection on server thread!192.168.0.178
+Fri Nov 04 23:56:01 CET 2016 Client connected!
+Fri Nov 04 23:56:21 CET 2016 Client time out!
+Fri Nov 04 23:56:21 CET 2016 Client time out!
+Fri Nov 04 23:56:21 CET 2016 Connection on server thread!192.168.0.178
+Fri Nov 04 23:56:21 CET 2016 Client connected!
+Fri Nov 04 23:56:21 CET 2016 Connection on server thread!192.168.0.108
+Fri Nov 04 23:56:21 CET 2016 Client connected!
+Fri Nov 04 23:56:22 CET 2016 Client time out!
+Fri Nov 04 23:56:22 CET 2016 Client time out!
+Fri Nov 04 23:56:26 CET 2016 Connection on server thread!192.168.0.108
+Fri Nov 04 23:56:26 CET 2016 Client connected!
+Fri Nov 04 23:56:39 CET 2016 Connection on server thread!192.168.0.178
+Fri Nov 04 23:56:39 CET 2016 Client connected!
+Fri Nov 04 23:56:47 CET 2016 Client time out!
+Fri Nov 04 23:56:58 CET 2016 Client time out!
+Fri Nov 04 23:57:05 CET 2016 Connection on server thread!192.168.0.108
+Fri Nov 04 23:57:05 CET 2016 Client connected!
+Fri Nov 04 23:57:27 CET 2016 Client time out!
+Fri Nov 04 23:57:46 CET 2016 Connection on server thread!192.168.0.108
+Fri Nov 04 23:57:46 CET 2016 Client connected!
+Fri Nov 04 23:58:24 CET 2016 Client time out!
+Fri Nov 04 23:59:08 CET 2016 Connection on server thread!192.168.0.108
+Fri Nov 04 23:59:08 CET 2016 Client connected!
+Fri Nov 04 23:59:25 CET 2016 Connection on server thread!192.168.0.178
+Fri Nov 04 23:59:25 CET 2016 Client connected!
+Fri Nov 04 23:59:31 CET 2016 Nem vagyunk meg
+Fri Nov 04 23:59:35 CET 2016 Client time out!
+Sat Nov 05 00:02:16 CET 2016 Client time out!
+Sat Nov 05 00:03:54 CET 2016 Connection on server thread!192.168.0.108
+Sat Nov 05 00:03:54 CET 2016 Client connected!
+Sat Nov 05 00:04:22 CET 2016 Client time out!
+Sat Nov 05 00:07:11 CET 2016 Connection on server thread!192.168.0.178
+Sat Nov 05 00:07:11 CET 2016 Client connected!
+Sat Nov 05 00:07:20 CET 2016 Nem vagyunk meg
+Sat Nov 05 00:07:21 CET 2016 Client time out!
+Sat Nov 05 00:08:00 CET 2016 Connection on server thread!192.168.0.178
+Sat Nov 05 00:08:00 CET 2016 Client connected!
+Sat Nov 05 00:08:04 CET 2016 Nem vagyunk meg
+Sat Nov 05 00:08:15 CET 2016 Connection on server thread!192.168.0.108
+Sat Nov 05 00:08:15 CET 2016 Client connected!
+Sat Nov 05 00:08:17 CET 2016 Client time out!
+Sat Nov 05 00:08:26 CET 2016 Client time out!
+
+Sat Nov 05 00:22:23 CET 2016 Running
+Sat Nov 05 00:22:25 CET 2016 Server shutdown!
+EXCEPTION: Socket closed
+--------------------------------------
+java.net.PlainSocketImpl.socketAccept(Native Method)

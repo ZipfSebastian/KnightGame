@@ -7,7 +7,7 @@ public class SearchResponse {
     private boolean success;
     private String message;
     private boolean matchFind;
-    private String name;
+    private String type;
 
     public boolean isMatchFind() {
         return matchFind;
@@ -33,11 +33,11 @@ public class SearchResponse {
         this.message = message;
     }
 
-    public String getName() {
-        return name;
+    public String getType() {
+        return type;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setType(String type) {
+        this.type = type;
     }
 }

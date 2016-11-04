@@ -7,8 +7,8 @@ public class Reciver : MonoBehaviour {
     protected NetworkInterface networkInterface;
 
     protected Canvas canvas;
-    protected GameObject informationPanel;
-    protected string session;
+	public GameObject informationPanel;
+    public string session;
     
     protected GameObject frontPanel;
 
@@ -19,7 +19,7 @@ public class Reciver : MonoBehaviour {
     void Awake() {
         canvas = GameObject.FindGameObjectWithTag("Canvas").GetComponent<Canvas>();
         informationPanel = canvas.transform.FindChild("InformationPanel").gameObject;
-        session = PlayerPrefs.GetString(Login.PREF_LOGIN_SESSION);
+        session = PlayerPrefs.GetString(LoginController.PREF_LOGIN_SESSION);
         
         informationPanel = canvas.transform.FindChild("InformationPanel").gameObject;
         frontPanel = informationPanel.transform.FindChild("FrontPanel").gameObject;
@@ -58,7 +58,7 @@ public class Reciver : MonoBehaviour {
         Init();
     }
 
-    protected void Send(string message) {
+	protected void Send(string message) {
         networkInterface.Send(message);
     }
     

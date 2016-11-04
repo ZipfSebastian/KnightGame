@@ -1,9 +1,18 @@
 package controllers;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.j256.ormlite.dao.Dao;
+import com.j256.ormlite.dao.DaoManager;
+import com.j256.ormlite.support.ConnectionSource;
 import logger.Log;
 import models.Client;
+import models.Map;
+import models.SpawnPoint;
+import responses.InitResponse;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * Created by Kesze on 2010.01.12..
@@ -12,23 +21,45 @@ public class Game extends Thread {
 
     private int gameID;
     private List<Client> inGameClients;
-    private boolean run; // amikor elindul a j�t�k true-ra �ll�tsd ut�na le�ll�t�sn�l fals-ra
+    private boolean run;
+    private List<SpawnPoint> spawnPoints;
+    private int clientLoaded = 0;
 
-    public void init (List<Client> currentUsers, int gameID) {
-        inGameClients = currentUsers; //�thelyezz�k a currentusersb�l a playereket
-        this.gameID = gameID; //�tadjuk a gameID-t
-        for(Client client : currentUsers)
-        {
-            client.setGameID(gameID); //be�ll�tjuk az adott usernek a gameid-j�t
+    public void init (List<Client> currentUsers, int gameID, ConnectionSource connectionSource) {
+        try{
+            Dao<SpawnPoint,String> spawnPointDao = DaoManager.createDao(connectionSource,SpawnPoint.class);
+            Dao<Map,String> mapDao = DaoManager.createDao(connectionSource,Map.class);
+            List<Map> maps = mapDao.queryForAll();
+            Random r = new Random();
+            int randomMapID = maps.get(r.nextInt(maps.size()-1)).getId();
+            spawnPoints = spawnPointDao.queryBuilder().where().eq(SpawnPoint.MAP_ID,randomMapID).query();
+            inGameClients = currentUsers;
+            this.gameID = gameID;
+            for(Client client : currentUsers)
+            {
+                client.setGameID(gameID);
+                //cli
+            }
+            run = true;
+        }catch (Exception e){
+
         }
-        run = true;
     }
 
     public void clientLoaded(Client client){
+        try {
+            clientLoaded++;
+            if (clientLoaded == inGameClients.size()) {
 
+            } else {
+                InitResponse response = new InitResponse();
+
+                client.getClientThread().send(new ObjectMapper().writeValueAsString(response));
+            }
+        }catch (Exception e){
+            Log.write(e);
+        }
     }
-
-    //..... mindenf�le requestre csin�lsz egy met�dust ami kezeli....
 
 
     @Override

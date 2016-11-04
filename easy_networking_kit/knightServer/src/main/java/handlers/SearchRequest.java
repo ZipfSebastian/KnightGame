@@ -1,6 +1,7 @@
 package handlers;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import constants.CommunicationConstants;
 import constants.Constants;
 import controllers.Game;
 import controllers.GameManagger;
@@ -17,8 +18,7 @@ import java.util.List;
  */
 public class SearchRequest extends RequestHandler {
     private boolean state;
-    //private String session;
-    public static final int minimalPlayer = 2;
+    public static final int minimalPlayer = 1;
 
     @Override
     public void onRecive(String request) {
@@ -33,49 +33,36 @@ public class SearchRequest extends RequestHandler {
         }
         SearchResponse searchResponse = new SearchResponse();
         searchResponse.setSuccess(true);
-        if(MatchQueue.waitingPlayersNumber()>= minimalPlayer)
+        searchResponse.setType(CommunicationConstants.SEARCH_RESPONSE);
+        if(MatchQueue.waitingPlayersNumber()> minimalPlayer)
         {
             searchResponse.setMatchFind(true);
-            searchResponse.setMessage("Megvagyunk");
             List<Client> currentUsers = MatchQueue.getPlayers(minimalPlayer);
-            for(int i=0;i<currentUsers.size();i++)  //k�ld �zenetet az �sszes queueban l�v� clientnek
-            {
-                searchResponse.setName(currentUsers.get(i).getUser().getName());
-                try {
+            try {
+                for(int i=0;i<currentUsers.size();i++){
                     send(new ObjectMapper().writeValueAsString(searchResponse), Constants.TCP, currentUsers.get(i));
                     send(new ObjectMapper().writeValueAsString(searchResponse), Constants.TCP, client);
-
                 }
-                catch (Exception e)
-                {
-                    Log.write(e);
+                Game game = new Game();
+                int index = GameManagger.addGame(game);
+                game.init(currentUsers, index);
+                for(int i=0; i<currentUsers.size();i++) {
+                    MatchQueue.removePlayer(currentUsers.get(i));
                 }
+            }catch (Exception e){
+                Log.write(e);
             }
-            Log.write("Megvagyunk");
-            /*NameResponse nameResponse = new NameResponse();
-            for (int i = 0; i < currentUsers.size(); i++)  //k�ld �zenetet az �sszes queueban l�v� clientnek
-            {
-                for(int j=0; j<currentUsers.size();j++) {
-                    nameResponse.setName(currentUsers.get(j).getUser().getName());
-                    try {
-                        send(new ObjectMapper().writeValueAsString(nameResponse), Constants.TCP, currentUsers.get(i));
-                    } catch (Exception e) {
-                        Log.write(e);
-                    }
-                }
-            }*/
-            Game game = new Game(); //p�ld�nyos�t�s
-            int index = GameManagger.addGame(game); //a p�ld�nyos�tott gamet �tadjuk az addgame met�dusnak
-            game.init(currentUsers, index); //az init met�dusnak �tadjuk a current userst �s az id-t jelent� indexet
+            Game game = new Game();
+            int index = GameManagger.addGame(game);
+            game.init(currentUsers, index);
             for(int i=0; i<currentUsers.size();i++) {
-                MatchQueue.removePlayer(currentUsers.get(i)); //az eddigi list�b�l elt�vol�tjuk a playereket
+                MatchQueue.removePlayer(currentUsers.get(i));
             }
         }
         else
         {
             if(isState() == false)
             {
-                searchResponse.setMessage("T�r�lt");
                 try {
                     send(new ObjectMapper().writeValueAsString(searchResponse), Constants.TCP, client);
                 }
@@ -86,8 +73,6 @@ public class SearchRequest extends RequestHandler {
             }
             else {
                 searchResponse.setMatchFind(false);
-                searchResponse.setMessage("Keresek");
-                Log.write("Nem vagyunk meg");
                 try {
                     send(new ObjectMapper().writeValueAsString(searchResponse), Constants.TCP, client);
                 } catch (Exception e) {
