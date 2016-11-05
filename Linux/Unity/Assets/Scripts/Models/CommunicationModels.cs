@@ -43,6 +43,7 @@ public class SearchResponse : Response{
 [Serializable]
 public class MoveRequest : Request{
 	public Vector2 newPosition;
+	public Vector2 moveDirection;
 }
 
 [Serializable]
@@ -67,6 +68,7 @@ public class Enemy{
 public class PositionResponse : Response{
 	public int id;
 	public Vector2 newPosition;
+	public Vector2 moveDirection;
 }
 
 

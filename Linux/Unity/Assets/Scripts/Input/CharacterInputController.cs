@@ -81,13 +81,14 @@ public class CharacterInputController : InputController {
 		remainingTime = (lastAttackTime2 + attackSpeed2) - Time.time;
 		attackButtonImage2.fillAmount = 1-(remainingTime/attackSpeed2);
 		if (onlineGameController != null) {
-			if (lastSendTime + sendTime < Time.time) {
+			if (Time.time > lastSendTime + sendTime) {
 				lastSendTime = Time.time;
 				MoveRequest moveRequest = new MoveRequest ();
 				moveRequest.session = onlineGameController.session;
 				Vector2 movement = new Vector2 (CrossPlatformInputManager.GetAxis ("Horizontal")
 					, CrossPlatformInputManager.GetAxis ("Vertical"));
-				moveRequest.newPosition = movement;
+				moveRequest.newPosition = transform.position;
+				moveRequest.moveDirection = movement;
 				moveRequest.type = CommunicationTypes.MOVE_REQUEST;
 				onlineGameController.SendMessage(JsonUtility.ToJson(moveRequest));
 			}

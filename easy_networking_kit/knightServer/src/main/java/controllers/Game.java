@@ -115,13 +115,16 @@ public class Game extends Thread {
                         positionResponse.setType(CommunicationConstants.POSITION_RESPONSE);
                         positionResponse.setId(enemy.getId());
                         positionResponse.setNewPosition(enemy.getPosition());
+                        positionResponse.setMoveDirection(enemy.getMoveDirection());
                         player.getClient().getClientThread().send(new ObjectMapper().writeValueAsString(positionResponse));
                     }
                 }
             }
         }catch(Exception e){
             run =  false;
+            GameManagger.gameEnded(this.gameID);
             for (Player player : inGameClients) {
+                player.getClient().setGameID(0);
                 GameEndResponse endResponse = new GameEndResponse();
                 endResponse.setType(CommunicationConstants.GAME_END_RESPONSE);
                 endResponse.setPoints(100);
@@ -149,10 +152,11 @@ public class Game extends Thread {
         return inGameClients;
     }
 
-    public void moveRequest(Client client, Vector2 newPosition) {
+    public void moveRequest(Client client, Vector2 newPosition, Vector2 moveDirection) {
         for(Player player : inGameClients){
             if(player.getClient() == client){
                 player.setPosition(newPosition);
+                player.setMoveDirection(moveDirection);
             }
 
         }

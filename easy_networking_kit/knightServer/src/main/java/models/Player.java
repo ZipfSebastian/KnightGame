@@ -8,7 +8,16 @@ public class Player {
     private Client client;
     private SpawnPoint spawnPoint;
     private Vector2 position;
+    private Vector2 moveDirection;
     private int id;
+
+    public Vector2 getMoveDirection() {
+        return moveDirection;
+    }
+
+    public void setMoveDirection(Vector2 moveDirection) {
+        this.moveDirection = moveDirection;
+    }
 
     public int getId() {
         return id;

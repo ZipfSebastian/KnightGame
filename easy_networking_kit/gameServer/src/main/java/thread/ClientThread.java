@@ -84,7 +84,9 @@ public class ClientThread extends Thread {
     public void send(String data) throws IOException {
         byte[] first = (data + System.getProperty("line.separator")).getBytes(Charset.forName("UTF-8"));
         socket.getOutputStream().write(first);
-        System.out.println("SEN: "+data);
+        if(!data.contains("PositionResponse")) {
+            System.out.println("SEN: " + data);
+        }
     }
 
     public void shutDown() {

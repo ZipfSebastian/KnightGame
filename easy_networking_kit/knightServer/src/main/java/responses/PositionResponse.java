@@ -10,6 +10,15 @@ public class PositionResponse extends Response {
 
     private int id;
     private Vector2 newPosition;
+    private Vector2 moveDirection;
+
+    public Vector2 getMoveDirection() {
+        return moveDirection;
+    }
+
+    public void setMoveDirection(Vector2 moveDirection) {
+        this.moveDirection = moveDirection;
+    }
 
     public int getId() {
         return id;
