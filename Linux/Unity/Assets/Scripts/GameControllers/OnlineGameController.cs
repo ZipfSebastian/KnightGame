@@ -37,7 +37,7 @@ public class OnlineGameController : Reciver
 	private void RefreshPosition(PositionResponse resp){
 		foreach (EnemyObject enemy in enemyList) {
 			if (enemy.id == resp.id) {
-				enemy.transform.position = resp.newPosition;
+				enemy.MoveSmothTo (resp.newPosition);
 			}
 		}
 	}

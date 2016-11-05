@@ -156,6 +156,7 @@ public class NetworkInterface : MonoBehaviour{
 			//Debug.Log(message);
 			theWriter.Write(foo);
 			theWriter.Flush();
+			lastUpdateTime = Time.time;
 		}
 		catch (Exception e)
 		{
@@ -192,7 +193,7 @@ public class NetworkInterface : MonoBehaviour{
 					message += theReader.ReadLine();
 					//message = encriptor.Decryption(message);
 
-					Debug.Log("RECV DATA: " + message);
+					//Debug.Log("RECV DATA: " + message);
 					if (message != null && message != string.Empty && message != " " && message.Length > 1)
 					{
 						//Debug.Log("RECV: " + Gzip.Decompress(message));

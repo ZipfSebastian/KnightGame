@@ -73,7 +73,7 @@ public class ClientThread extends Thread {
             if (avaible > 0) {
                 lastUpdateTime = System.currentTimeMillis();
                 String clientSentence = inFromClient.readLine();
-                if(!clientSentence.contains("PingRequest")) {
+                if(!clientSentence.contains("PingRequest") && !clientSentence.contains("MoveRequest")) {
                     System.out.println("REC: " + clientSentence);
                 }
                 router.onRecive(clientSentence, this);

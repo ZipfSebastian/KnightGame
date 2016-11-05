@@ -85,7 +85,9 @@ public class CharacterInputController : InputController {
 				lastSendTime = Time.time;
 				MoveRequest moveRequest = new MoveRequest ();
 				moveRequest.session = onlineGameController.session;
-				moveRequest.newPosition = transform.position;
+				Vector2 movement = new Vector2 (CrossPlatformInputManager.GetAxis ("Horizontal")
+					, CrossPlatformInputManager.GetAxis ("Vertical"));
+				moveRequest.newPosition = movement;
 				moveRequest.type = CommunicationTypes.MOVE_REQUEST;
 				onlineGameController.SendMessage(JsonUtility.ToJson(moveRequest));
 			}
