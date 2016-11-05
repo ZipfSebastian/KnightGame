@@ -2368,3 +2368,198 @@ Sat Nov 05 00:22:25 CET 2016 Server shutdown!
 EXCEPTION: Socket closed
 --------------------------------------
 java.net.PlainSocketImpl.socketAccept(Native Method)
+
+Sat Nov 05 11:24:38 CET 2016 Unable to connect to database, check you created correctly and db user can connect to it!
+EXCEPTION: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+--------------------------------------
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:981)
+com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:339)
+com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2286)
+com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2085)
+com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:795)
+com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:327)
+java.sql.DriverManager.getConnection(DriverManager.java:664)
+java.sql.DriverManager.getConnection(DriverManager.java:208)
+com.j256.ormlite.jdbc.JdbcConnectionSource.makeConnection(JdbcConnectionSource.java:232)
+com.j256.ormlite.jdbc.JdbcConnectionSource.getReadWriteConnection(JdbcConnectionSource.java:174)
+com.j256.ormlite.table.TableUtils.doCreateTable(TableUtils.java:438)
+com.j256.ormlite.table.TableUtils.createTable(TableUtils.java:220)
+com.j256.ormlite.table.TableUtils.createTableIfNotExists(TableUtils.java:61)
+server.CommandPrompt.startServer(CommandPrompt.java:103)
+server.CommandPrompt.commandReceived(CommandPrompt.java:39)
+main.ServerApplication.mainThread(ServerApplication.java:52)
+main.ServerApplication.start(ServerApplication.java:27)
+main.Main.main(Main.java:14)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+Sat Nov 05 11:25:15 CET 2016 Running
+Sat Nov 05 11:25:22 CET 2016 Connection on server thread!192.168.0.178
+Sat Nov 05 11:25:22 CET 2016 Client connected!
+Sat Nov 05 11:25:24 CET 2016 Connection on server thread!192.168.0.108
+Sat Nov 05 11:25:24 CET 2016 Client connected!
+Sat Nov 05 11:25:29 CET 2016 Client time out!
+Sat Nov 05 11:25:44 CET 2016 Connection on server thread!192.168.0.108
+Sat Nov 05 11:25:44 CET 2016 Client connected!
+EXCEPTION: null
+--------------------------------------
+controllers.GameManagger.addGame(GameManagger.java:15)
+handlers.SearchRequest.onRecive(SearchRequest.java:47)
+server.Router.onRecive(Router.java:36)
+thread.ClientThread.receive(ClientThread.java:79)
+thread.ClientThread.run(ClientThread.java:50)
+
+Sat Nov 05 11:26:12 CET 2016 Client time out!
+Sat Nov 05 11:26:21 CET 2016 Client time out!
+Sat Nov 05 11:28:15 CET 2016 Connection on server thread!192.168.0.178
+Sat Nov 05 11:28:15 CET 2016 Client connected!
+Sat Nov 05 11:28:32 CET 2016 Connection on server thread!192.168.0.108
+Sat Nov 05 11:28:32 CET 2016 Client connected!
+Sat Nov 05 11:28:33 CET 2016 Client time out!
+Sat Nov 05 11:28:43 CET 2016 Connection on server thread!192.168.0.108
+Sat Nov 05 11:28:43 CET 2016 Client connected!
+EXCEPTION: null
+--------------------------------------
+controllers.GameManagger.addGame(GameManagger.java:15)
+handlers.SearchRequest.onRecive(SearchRequest.java:47)
+server.Router.onRecive(Router.java:36)
+thread.ClientThread.receive(ClientThread.java:79)
+thread.ClientThread.run(ClientThread.java:50)
+
+Sat Nov 05 11:28:56 CET 2016 Client time out!
+
+Sat Nov 05 11:33:04 CET 2016 Running
+Sat Nov 05 11:33:16 CET 2016 Connection on server thread!192.168.0.178
+Sat Nov 05 11:33:16 CET 2016 Client connected!
+Sat Nov 05 11:33:26 CET 2016 Connection on server thread!192.168.0.108
+Sat Nov 05 11:33:26 CET 2016 Client connected!
+Sat Nov 05 11:33:28 CET 2016 Client time out!
+Sat Nov 05 11:33:38 CET 2016 Connection on server thread!192.168.0.108
+Sat Nov 05 11:33:38 CET 2016 Client connected!
+Sat Nov 05 11:33:56 CET 2016 Client time out!
+Sat Nov 05 11:34:52 CET 2016 Client time out!
+
+Sat Nov 05 11:38:07 CET 2016 Running
+Sat Nov 05 11:38:20 CET 2016 Client connected!Sat Nov 05 11:38:20 CET 2016 Connection on server thread!192.168.0.178
+
+Sat Nov 05 11:38:28 CET 2016 Connection on server thread!192.168.0.108
+Sat Nov 05 11:38:28 CET 2016 Client connected!
+Sat Nov 05 11:38:29 CET 2016 Client time out!
+Sat Nov 05 11:38:40 CET 2016 Connection on server thread!192.168.0.108
+Sat Nov 05 11:38:40 CET 2016 Client connected!
+Sat Nov 05 11:39:00 CET 2016 Client time out!
+Sat Nov 05 11:40:51 CET 2016 Client time out!
+
+Sat Nov 05 11:41:16 CET 2016 Running
+Sat Nov 05 11:41:24 CET 2016 Connection on server thread!192.168.0.178
+Sat Nov 05 11:41:24 CET 2016 Client connected!
+Sat Nov 05 11:41:33 CET 2016 Connection on server thread!192.168.0.108
+Sat Nov 05 11:41:33 CET 2016 Client connected!
+Sat Nov 05 11:41:34 CET 2016 Client time out!
+Sat Nov 05 11:41:45 CET 2016 Connection on server thread!192.168.0.108
+Sat Nov 05 11:41:45 CET 2016 Client connected!
+Sat Nov 05 11:42:17 CET 2016 Client time out!
+EXCEPTION: bound must be positive
+--------------------------------------
+java.util.Random.nextInt(Random.java:388)
+controllers.Game.init(Game.java:35)
+handlers.SearchRequest.onRecive(SearchRequest.java:48)
+server.Router.onRecive(Router.java:36)
+thread.ClientThread.receive(ClientThread.java:79)
+thread.ClientThread.run(ClientThread.java:50)
+
+Sat Nov 05 11:44:11 CET 2016 Client time out!
+
+Sat Nov 05 11:44:32 CET 2016 Running
+Sat Nov 05 11:44:40 CET 2016 Connection on server thread!192.168.0.178
+Sat Nov 05 11:44:40 CET 2016 Client connected!
+Sat Nov 05 11:44:49 CET 2016 Connection on server thread!192.168.0.108
+Sat Nov 05 11:44:49 CET 2016 Client connected!
+Sat Nov 05 11:44:50 CET 2016 Client time out!
+Sat Nov 05 11:45:02 CET 2016 Connection on server thread!192.168.0.108
+Sat Nov 05 11:45:02 CET 2016 Client connected!
+Sat Nov 05 11:45:18 CET 2016 Client time out!
+Sat Nov 05 11:45:50 CET 2016 GameServerStarted!
+Sat Nov 05 11:45:52 CET 2016 Client time out!
+Sat Nov 05 11:45:52 CET 2016 Connection on server thread!192.168.0.108
+Sat Nov 05 11:45:52 CET 2016 Client connected!
+Sat Nov 05 11:45:53 CET 2016 Client time out!
+
+Sat Nov 05 11:47:22 CET 2016 Running
+Sat Nov 05 11:47:30 CET 2016 Connection on server thread!192.168.0.178
+Sat Nov 05 11:47:30 CET 2016 Client connected!
+Sat Nov 05 11:47:47 CET 2016 Connection on server thread!192.168.0.108
+Sat Nov 05 11:47:47 CET 2016 Client connected!
+Sat Nov 05 11:48:07 CET 2016 Client time out!
+EXCEPTION: Socket is closed
+--------------------------------------
+java.net.Socket.getOutputStream(Socket.java:943)
+thread.ClientThread.send(ClientThread.java:86)
+interfaces.RequestHandler.send(RequestHandler.java:39)
+handlers.SearchRequest.onRecive(SearchRequest.java:43)
+server.Router.onRecive(Router.java:36)
+thread.ClientThread.receive(ClientThread.java:79)
+thread.ClientThread.run(ClientThread.java:50)
+
+Sat Nov 05 11:48:07 CET 2016 Client time out!
+Sat Nov 05 11:48:07 CET 2016 Connection on server thread!192.168.0.108
+Sat Nov 05 11:48:07 CET 2016 Client connected!
+Sat Nov 05 11:48:07 CET 2016 Connection on server thread!192.168.0.178
+Sat Nov 05 11:48:07 CET 2016 Client connected!
+Sat Nov 05 11:48:08 CET 2016 Client time out!
+Sat Nov 05 11:48:08 CET 2016 Client time out!
+Sat Nov 05 11:48:17 CET 2016 Connection on server thread!192.168.0.108
+Sat Nov 05 11:48:17 CET 2016 Client connected!
+Sat Nov 05 11:48:21 CET 2016 Connection on server thread!192.168.0.178
+Sat Nov 05 11:48:21 CET 2016 Client connected!
+Sat Nov 05 11:48:46 CET 2016 Client time out!
+Sat Nov 05 11:48:49 CET 2016 Connection on server thread!192.168.0.178
+Sat Nov 05 11:48:49 CET 2016 Client connected!
+Sat Nov 05 11:49:03 CET 2016 Client time out!
+Sat Nov 05 11:49:28 CET 2016 GameServerStarted!
+Sat Nov 05 11:49:31 CET 2016 Client time out!
+
+Sat Nov 05 12:34:50 CET 2016 Running
+Sat Nov 05 12:34:57 CET 2016 Connection on server thread!192.168.0.178
+Sat Nov 05 12:34:57 CET 2016 Client connected!
+EXCEPTION: Socket is closed
+--------------------------------------
+java.net.Socket.getOutputStream(Socket.java:943)
+thread.ClientThread.send(ClientThread.java:86)
+interfaces.RequestHandler.send(RequestHandler.java:39)
+handlers.LoginRequest.onRecive(LoginRequest.java:45)
+server.Router.onRecive(Router.java:36)
+thread.ClientThread.receive(ClientThread.java:79)
+thread.ClientThread.run(ClientThread.java:50)
+
+Sat Nov 05 12:35:09 CET 2016 Connection on server thread!192.168.0.178
+Sat Nov 05 12:35:09 CET 2016 Client connected!
+Sat Nov 05 12:35:10 CET 2016 Client time out!
+Sat Nov 05 12:35:10 CET 2016 Connection on server thread!192.168.0.178
+Sat Nov 05 12:35:10 CET 2016 Client connected!
+Sat Nov 05 12:35:26 CET 2016 Connection on server thread!192.168.0.108
+Sat Nov 05 12:35:26 CET 2016 Client connected!
+Sat Nov 05 12:35:28 CET 2016 Client time out!
+Sat Nov 05 12:35:37 CET 2016 Connection on server thread!192.168.0.108
+Sat Nov 05 12:35:37 CET 2016 Client connected!
+Sat Nov 05 12:35:49 CET 2016 GameServerStarted!
+Sat Nov 05 12:36:20 CET 2016 Client time out!
+Sat Nov 05 12:36:50 CET 2016 Client time out!

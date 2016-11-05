@@ -24,6 +24,8 @@ public class MainMenuController : Reciver
 				loginController.OnRecive(data);
 			}else if(resp.type == CommunicationTypes.SEARCH_RESPONSE){
 				searchGameController.OnRecive(data);
+			}else if(resp.type == CommunicationTypes.LOAD_GAME_RESPONSE){
+				searchGameController.OnRecive(data);
 			}
 		}catch(Exception e){
 			Debug.Log (e);

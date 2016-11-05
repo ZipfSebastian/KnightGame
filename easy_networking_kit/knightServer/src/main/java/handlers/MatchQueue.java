@@ -22,7 +22,7 @@ public class MatchQueue {
         removeInactivePlayers();
         List<Client> clients = new ArrayList<Client>(); //num az egy helyfoglal� m�shol kap �rt�ket
         if (num < waitingPlayer.size()) {
-            for (int i = 0; i < num; i++) {
+            for (int i = 0; i <= num; i++) {
                 clients.add(waitingPlayer.poll());
             }
             return clients;

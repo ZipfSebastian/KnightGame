@@ -1,6 +1,7 @@
 package controllers;
 
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -9,19 +10,19 @@ import java.util.Map;
 public class GameManagger {
 
     private static int index;
-    private static Map<Integer, Game> games; //key value alapján tárol adatokat
+    private static Map<Integer, Game> games = new HashMap<Integer, Game>(); //key value alapjï¿½n tï¿½rol adatokat
 
     public static int addGame(Game game){
-        games.put(index, game); //a mapba helyzzük az indexel ellátott játékot
+        games.put(index, game); //a mapba helyzzï¿½k az indexel ellï¿½tott jï¿½tï¿½kot
         index++;
         return index-1;
     }
 
     public static void gameEnded(int id){
-            games.remove(id); //eltávolítjuk a játékot a végeztével
+            games.remove(id); //eltï¿½volï¿½tjuk a jï¿½tï¿½kot a vï¿½geztï¿½vel
     }
 
     public static Game getGame(int id){
-        return games.get(id); //lekérjük id alapján a játékot
+        return games.get(id); //lekï¿½rjï¿½k id alapjï¿½n a jï¿½tï¿½kot
     }
 }
