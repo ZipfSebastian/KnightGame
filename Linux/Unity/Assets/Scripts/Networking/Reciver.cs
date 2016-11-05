@@ -9,6 +9,10 @@ public class Reciver : MonoBehaviour {
     protected Canvas canvas;
 	public GameObject informationPanel;
     public string session;
+	protected Text mainText;
+	protected Text buttonText;
+	protected Button btnOk;
+
     
     protected GameObject frontPanel;
 
@@ -18,9 +22,11 @@ public class Reciver : MonoBehaviour {
 
     void Awake() {
         canvas = GameObject.FindGameObjectWithTag("Canvas").GetComponent<Canvas>();
-        informationPanel = canvas.transform.FindChild("InformationPanel").gameObject;
         session = PlayerPrefs.GetString(LoginController.PREF_LOGIN_SESSION);
-        
+		frontPanel = informationPanel.transform.FindChild ("FrontPanel").gameObject;
+		btnOk = frontPanel.transform.FindChild ("ButtonOk").GetComponent<Button>();
+		mainText = frontPanel.transform.FindChild ("MainText").GetComponent<Text>();
+		buttonText = btnOk.transform.FindChild ("Text").GetComponent<Text> (); 
         informationPanel = canvas.transform.FindChild("InformationPanel").gameObject;
         frontPanel = informationPanel.transform.FindChild("FrontPanel").gameObject;
         networkInterface = GameObject.FindGameObjectWithTag("NetworkInterface").GetComponent<NetworkInterface>();

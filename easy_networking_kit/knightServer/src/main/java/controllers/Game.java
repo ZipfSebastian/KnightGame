@@ -48,6 +48,7 @@ public class Game extends Thread {
                 LoadGameResponse response = new LoadGameResponse();
                 response.setMapID(randomMapID);
                 response.setType(CommunicationConstants.LOAD_GAME_RESPONSE);
+                Log.write(player.getClient().getUser().getName());
                 player.getClient().getClientThread().send(new ObjectMapper().writeValueAsString(response));
                 i++;
             }
@@ -82,7 +83,7 @@ public class Game extends Thread {
                 }
             } else {
                 InitResponse response = new InitResponse();
-
+                response.setType(CommunicationConstants.INIT_RESPONSE);
                 client.getClientThread().send(new ObjectMapper().writeValueAsString(response));
             }
         }catch (Exception e){

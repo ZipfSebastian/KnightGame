@@ -5,6 +5,7 @@ using System.Collections.Generic;
 [Serializable]
 public class Request{
 	public string type;
+	public string session;
 }
 
 [Serializable]
@@ -62,6 +63,7 @@ public class CommunicationTypes{
 	public const string LOGIN_REQUEST_TYPE = "handlers.LoginRequest";
 	public const string PING_REQUEST = "handlers.PingRequest";
 	public const string SEARCH_REQUEST = "handlers.SearchRequest";
+	public const string INIT_REQUEST = "handlers.InitRequest";
 
 	public const string LOGIN_RESPONSE = "LoginResponse";
 	public const string SEARCH_RESPONSE = "SearchResponse";
