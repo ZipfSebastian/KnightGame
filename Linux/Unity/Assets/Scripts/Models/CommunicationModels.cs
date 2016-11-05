@@ -41,6 +41,11 @@ public class SearchResponse : Response{
 }
 
 [Serializable]
+public class MoveRequest : Request{
+	public Vector2 newPosition;
+}
+
+[Serializable]
 public class LoadGameResponse : Response{
 	public int mapID;
 
@@ -58,16 +63,24 @@ public class Enemy{
 	public Vector2 position;
 }
 
+[Serializable]
+public class PositionResponse : Response{
+	public int id;
+	public Vector2 newPosition;
+}
+
 
 public class CommunicationTypes{
 	public const string LOGIN_REQUEST_TYPE = "handlers.LoginRequest";
 	public const string PING_REQUEST = "handlers.PingRequest";
 	public const string SEARCH_REQUEST = "handlers.SearchRequest";
 	public const string INIT_REQUEST = "handlers.InitRequest";
+	public const string MOVE_REQUEST = "handlers.MoveRequest";
 
 	public const string LOGIN_RESPONSE = "LoginResponse";
 	public const string SEARCH_RESPONSE = "SearchResponse";
 	public const string LOAD_GAME_RESPONSE = "LoadGameResponse";
 	public const string START_GAME_RESPONSE = "StartGameResponse";
 	public const string INIT_RESPONSE = "InitResponse";
+	public const string POSITION_RESPONSE = "PositionResponse";
 }

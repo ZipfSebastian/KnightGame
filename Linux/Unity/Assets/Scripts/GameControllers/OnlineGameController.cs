@@ -23,9 +23,22 @@ public class OnlineGameController : Reciver
 				btnOk.gameObject.SetActive (false);
 			} else if (res.type == CommunicationTypes.START_GAME_RESPONSE) {
 				LoadGame(JsonUtility.FromJson<StartGameResponse>(data));
+			}else if(res.type == CommunicationTypes.POSITION_RESPONSE){
+				PositionResponse response = JsonUtility.FromJson<PositionResponse>(data);
+				RefreshPosition(response);
+			}else{
+				Debug.Log("ParseError");
 			}
 		}catch(Exception e){
 			Debug.Log (e.Message);
+		}
+	}
+
+	private void RefreshPosition(PositionResponse resp){
+		foreach (EnemyObject enemy in enemyList) {
+			if (enemy.id == resp.id) {
+				enemy.transform.position = resp.newPosition;
+			}
 		}
 	}
 
@@ -63,6 +76,10 @@ public class OnlineGameController : Reciver
 			}
 		}
 		return false;
+	}
+
+	public void SendMessage(string message){
+		Send (message);
 	}
 
 	public override void ConnectionResult (int res)

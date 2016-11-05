@@ -9,4 +9,6 @@ public class CommunicationConstants {
     public static final String LOAD_GAME_RESPONSE = "LoadGameResponse";
     public static final String START_GAME_RESPONSE = "StartGameResponse";
     public static final String INIT_RESPONSE = "InitResponse";
+    public static final String POSITION_RESPONSE = "PositionResponse";
+    public static final String GAME_END_RESPONSE = "GameEndResponse";
 }

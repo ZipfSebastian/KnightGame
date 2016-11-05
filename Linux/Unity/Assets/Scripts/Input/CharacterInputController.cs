@@ -19,9 +19,13 @@ public class CharacterInputController : InputController {
 	public float daggerSpeed = 1.0f;
 	public int daggerDamage = 10;
 	public float daggerYoffset = 0.7f;
+	public OnlineGameController onlineGameController;
+	public float lastSendTime;
+	public float sendTime;
 
 	void Start(){
 		//characterController = GetComponent<CharacterController2D> ();
+		onlineGameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<OnlineGameController>();
 	}
 
 	public override float GetHorizontal ()
@@ -76,5 +80,15 @@ public class CharacterInputController : InputController {
 		attackButtonImage.fillAmount = 1-(remainingTime/attackSpeed);
 		remainingTime = (lastAttackTime2 + attackSpeed2) - Time.time;
 		attackButtonImage2.fillAmount = 1-(remainingTime/attackSpeed2);
+		if (onlineGameController != null) {
+			if (lastSendTime + sendTime < Time.time) {
+				lastSendTime = Time.time;
+				MoveRequest moveRequest = new MoveRequest ();
+				moveRequest.session = onlineGameController.session;
+				moveRequest.newPosition = transform.position;
+				moveRequest.type = CommunicationTypes.MOVE_REQUEST;
+				onlineGameController.SendMessage(JsonUtility.ToJson(moveRequest));
+			}
+		}
 	}
 }

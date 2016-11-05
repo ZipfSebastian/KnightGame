@@ -7,9 +7,7 @@ import com.j256.ormlite.support.ConnectionSource;
 import constants.CommunicationConstants;
 import logger.Log;
 import models.*;
-import responses.InitResponse;
-import responses.LoadGameResponse;
-import responses.StartGameResponse;
+import responses.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -52,7 +50,7 @@ public class Game extends Thread {
                 player.getClient().getClientThread().send(new ObjectMapper().writeValueAsString(response));
                 i++;
             }
-            run = true;
+
             Log.write("GameServerStarted!");
         }catch (Exception e){
             Log.write(e);
@@ -81,6 +79,8 @@ public class Game extends Thread {
                     player.getClient().getClientThread().send(new ObjectMapper().writeValueAsString(response));
 
                 }
+                run = true;
+                this.start();
             } else {
                 InitResponse response = new InitResponse();
                 response.setType(CommunicationConstants.INIT_RESPONSE);
@@ -98,9 +98,41 @@ public class Game extends Thread {
         while(run)
         {
             try {
-                sleep(10);
+                sleep(100);
+                sendPositions();
             } catch (InterruptedException e) {
                 Log.write(e);
+            }
+        }
+    }
+
+    private void sendPositions() {
+        try {
+            for (Player player : inGameClients) {
+                for (Player enemy : inGameClients) {
+                    if (player != enemy && player.getClient().isOnline()) {
+                        PositionResponse positionResponse = new PositionResponse();
+                        positionResponse.setType(CommunicationConstants.POSITION_RESPONSE);
+                        positionResponse.setId(enemy.getId());
+                        positionResponse.setNewPosition(enemy.getPosition());
+                        player.getClient().getClientThread().send(new ObjectMapper().writeValueAsString(positionResponse));
+                    }
+                }
+            }
+        }catch(Exception e){
+            run =  false;
+            for (Player player : inGameClients) {
+                GameEndResponse endResponse = new GameEndResponse();
+                endResponse.setType(CommunicationConstants.GAME_END_RESPONSE);
+                endResponse.setPoints(100);
+                endResponse.setVictory(false);
+                try {
+                    if(player.getClient().isOnline()) {
+                        player.getClient().getClientThread().send(new ObjectMapper().writeValueAsString(endResponse));
+                    }
+                }catch (Exception ex){
+                    Log.write(ex);
+                }
             }
         }
     }
@@ -115,5 +147,14 @@ public class Game extends Thread {
 
     public List<Player> getInGameClients() {
         return inGameClients;
+    }
+
+    public void moveRequest(Client client, Vector2 newPosition) {
+        for(Player player : inGameClients){
+            if(player.getClient() == client){
+                player.setPosition(newPosition);
+            }
+
+        }
     }
 }

@@ -46,7 +46,7 @@ public class SearchRequest extends RequestHandler {
                 Game game = new Game();
                 int index = GameManagger.addGame(game);
                 game.init(currentUsers, index,connectionSource);
-                game.start();
+                //game.start();
                 for(int i=0; i<currentUsers.size();i++) {
                     MatchQueue.removePlayer(currentUsers.get(i));
                 }
