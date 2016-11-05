@@ -13,4 +13,5 @@ public class AnimationNames{
 
 public class SceenNames{
 	public const string GAME_SCEEN = "Level1";
+	public const string MAIN_SCEEN = "Main";
 }

@@ -7,8 +7,10 @@ public class SearchGameHandler : MonoBehaviour {
 	public MainMenuController mainController;
 	public GameObject searchPanel;
 	public Animator canvasAnimator;
+	private bool searching = false;
 
 	public void OnSearchClick(){
+		searching = true;
 		SearchRequest request = new SearchRequest ();
 		request.type = CommunicationTypes.SEARCH_REQUEST;
 		request.state = true;
@@ -20,7 +22,7 @@ public class SearchGameHandler : MonoBehaviour {
 		Response res = JsonUtility.FromJson<Response> (message);
 		if (res.type == CommunicationTypes.SEARCH_RESPONSE) {
 			SearchResponse resp = JsonUtility.FromJson<SearchResponse> (message);
-			if (resp.matchFind == false) {
+			if (resp.matchFind == false && searching) {
 				searchPanel.SetActive (true);
 			} 
 		}else if(res.type == CommunicationTypes.LOAD_GAME_RESPONSE){
@@ -30,6 +32,7 @@ public class SearchGameHandler : MonoBehaviour {
 	}
 
 	public void OnCancelClick(){
+		searching = false;
 		SearchRequest request = new SearchRequest ();
 		request.type = CommunicationTypes.SEARCH_REQUEST;
 		request.state = false;

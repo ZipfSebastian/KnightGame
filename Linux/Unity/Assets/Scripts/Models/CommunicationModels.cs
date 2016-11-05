@@ -71,6 +71,12 @@ public class PositionResponse : Response{
 	public Vector2 moveDirection;
 }
 
+[Serializable]
+public class GameEndResponse : Response{
+	public bool victory;
+	public int points;
+}
+
 
 public class CommunicationTypes{
 	public const string LOGIN_REQUEST_TYPE = "handlers.LoginRequest";
@@ -85,4 +91,5 @@ public class CommunicationTypes{
 	public const string START_GAME_RESPONSE = "StartGameResponse";
 	public const string INIT_RESPONSE = "InitResponse";
 	public const string POSITION_RESPONSE = "PositionResponse";
+	public const string GAME_END_RESPONSE = "GameEndResponse";
 }

@@ -62077,3 +62077,113 @@ thread.ClientThread.send(ClientThread.java:86)
 controllers.Game.sendPositions(Game.java:132)
 controllers.Game.run(Game.java:102)
 
+
+Sat Nov 05 23:34:21 CET 2016 Running
+Sat Nov 05 23:34:33 CET 2016 Connection on server thread!192.168.0.178
+Sat Nov 05 23:34:33 CET 2016 Client connected!
+Sat Nov 05 23:40:02 CET 2016 Connection on server thread!192.168.0.178
+Sat Nov 05 23:40:02 CET 2016 Client connected!
+Sat Nov 05 23:40:30 CET 2016 Connection on server thread!192.168.0.108
+Sat Nov 05 23:40:30 CET 2016 Client connected!
+Sat Nov 05 23:40:32 CET 2016 test
+Sat Nov 05 23:40:33 CET 2016 test1
+Sat Nov 05 23:40:33 CET 2016 GameServerStarted!
+Sat Nov 05 23:40:34 CET 2016 Connection on server thread!192.168.0.108
+Sat Nov 05 23:40:34 CET 2016 Client connected!
+Sat Nov 05 23:40:34 CET 2016 ClientLoaded
+Sat Nov 05 23:40:34 CET 2016 Connection on server thread!192.168.0.178
+Sat Nov 05 23:40:34 CET 2016 Client connected!
+Sat Nov 05 23:40:34 CET 2016 ClientLoaded
+EXCEPTION: Broken pipe (Write failed)
+--------------------------------------
+java.net.SocketOutputStream.socketWrite0(Native Method)
+java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:109)
+java.net.SocketOutputStream.write(SocketOutputStream.java:141)
+thread.ClientThread.send(ClientThread.java:86)
+controllers.Game.sendPositions(Game.java:134)
+controllers.Game.run(Game.java:102)
+
+Sat Nov 05 23:41:26 CET 2016 Connection on server thread!192.168.0.178
+Sat Nov 05 23:41:26 CET 2016 Client connected!
+Sat Nov 05 23:41:36 CET 2016 Connection on server thread!192.168.0.108
+Sat Nov 05 23:41:36 CET 2016 Client connected!
+Sat Nov 05 23:41:37 CET 2016 test
+Sat Nov 05 23:41:37 CET 2016 test1
+Sat Nov 05 23:41:37 CET 2016 GameServerStarted!
+Sat Nov 05 23:41:41 CET 2016 Connection on server thread!192.168.0.108
+Sat Nov 05 23:41:41 CET 2016 Client connected!
+Sat Nov 05 23:42:07 CET 2016 Connection on server thread!192.168.0.178
+Sat Nov 05 23:42:07 CET 2016 Client connected!
+Sat Nov 05 23:42:16 CET 2016 Connection on server thread!192.168.0.108
+Sat Nov 05 23:42:16 CET 2016 Client connected!
+Sat Nov 05 23:42:19 CET 2016 Connection on server thread!192.168.0.178
+Sat Nov 05 23:42:19 CET 2016 Client connected!
+EXCEPTION: Connection reset
+--------------------------------------
+java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:113)
+java.net.SocketOutputStream.write(SocketOutputStream.java:141)
+thread.ClientThread.send(ClientThread.java:86)
+interfaces.RequestHandler.send(RequestHandler.java:39)
+handlers.SearchRequest.onRecive(SearchRequest.java:43)
+server.Router.onRecive(Router.java:36)
+thread.ClientThread.receive(ClientThread.java:79)
+thread.ClientThread.run(ClientThread.java:50)
+
+Sat Nov 05 23:42:44 CET 2016 test
+Sat Nov 05 23:42:44 CET 2016 test1
+Sat Nov 05 23:42:44 CET 2016 GameServerStarted!
+Sat Nov 05 23:43:57 CET 2016 Connection on server thread!192.168.0.108
+Sat Nov 05 23:43:57 CET 2016 Client connected!
+
+
+Sat Nov 05 23:52:10 CET 2016 Running
+Sat Nov 05 23:54:06 CET 2016 Connection on server thread!192.168.0.108
+Sat Nov 05 23:54:06 CET 2016 Client connected!
+Sat Nov 05 23:54:13 CET 2016 Connection on server thread!192.168.0.178
+Sat Nov 05 23:54:13 CET 2016 Client connected!
+Sat Nov 05 23:54:18 CET 2016 test1
+Sat Nov 05 23:54:18 CET 2016 test
+Sat Nov 05 23:54:18 CET 2016 GameServerStarted!
+Sat Nov 05 23:54:20 CET 2016 Connection on server thread!192.168.0.108
+Sat Nov 05 23:54:20 CET 2016 Client connected!
+Sat Nov 05 23:54:20 CET 2016 ClientLoaded
+Sat Nov 05 23:54:20 CET 2016 Connection on server thread!192.168.0.178
+Sat Nov 05 23:54:20 CET 2016 Client connected!
+Sat Nov 05 23:54:20 CET 2016 ClientLoaded
+EXCEPTION: Broken pipe (Write failed)
+--------------------------------------
+java.net.SocketOutputStream.socketWrite0(Native Method)
+java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:109)
+java.net.SocketOutputStream.write(SocketOutputStream.java:141)
+thread.ClientThread.send(ClientThread.java:86)
+controllers.Game.sendPositions(Game.java:134)
+controllers.Game.run(Game.java:102)
+
+Sat Nov 05 23:55:36 CET 2016 Connection on server thread!192.168.0.178
+Sat Nov 05 23:55:36 CET 2016 Client connected!
+Sat Nov 05 23:55:44 CET 2016 Connection on server thread!192.168.0.108
+Sat Nov 05 23:55:44 CET 2016 Client connected!
+Sat Nov 05 23:55:46 CET 2016 test
+Sat Nov 05 23:55:46 CET 2016 test1
+Sat Nov 05 23:55:46 CET 2016 GameServerStarted!
+Sat Nov 05 23:55:47 CET 2016 Connection on server thread!192.168.0.108
+Sat Nov 05 23:55:47 CET 2016 Client connected!
+Sat Nov 05 23:55:47 CET 2016 Client connected!
+Sat Nov 05 23:55:47 CET 2016 Connection on server thread!192.168.0.178
+
+Sun Nov 06 00:05:51 CET 2016 Running
+Sun Nov 06 00:05:53 CET 2016 Connection on server thread!192.168.0.178
+Sun Nov 06 00:05:53 CET 2016 Client connected!
+Sun Nov 06 00:06:33 CET 2016 Connection on server thread!192.168.0.178
+Sun Nov 06 00:06:33 CET 2016 Client connected!
+Sun Nov 06 00:06:46 CET 2016 Connection on server thread!192.168.0.108
+Sun Nov 06 00:06:46 CET 2016 Client connected!
+Sun Nov 06 00:06:48 CET 2016 test
+Sun Nov 06 00:06:48 CET 2016 test1
+Sun Nov 06 00:06:48 CET 2016 GameServerStarted!
+Sun Nov 06 00:06:49 CET 2016 Connection on server thread!192.168.0.108
+Sun Nov 06 00:06:49 CET 2016 Client connected!
+Sun Nov 06 00:06:49 CET 2016 ClientLoaded
+Sun Nov 06 00:06:49 CET 2016 Connection on server thread!192.168.0.178
+Sun Nov 06 00:06:49 CET 2016 Client connected!
+Sun Nov 06 00:06:49 CET 2016 ClientLoaded

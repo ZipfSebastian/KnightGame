@@ -98,8 +98,8 @@ public class Game extends Thread {
         while(run)
         {
             try {
-                sleep(100);
-                sendPositions();
+                sleep(1000);
+                //sendPositions();
             } catch (InterruptedException e) {
                 Log.write(e);
             }
@@ -153,12 +153,29 @@ public class Game extends Thread {
     }
 
     public void moveRequest(Client client, Vector2 newPosition, Vector2 moveDirection) {
+        Player sender = null;
         for(Player player : inGameClients){
             if(player.getClient() == client){
+                sender = player;
                 player.setPosition(newPosition);
                 player.setMoveDirection(moveDirection);
+                break;
             }
 
+        }
+        for(Player enemy : inGameClients){
+            if(enemy != sender) {
+                try {
+                    PositionResponse positionResponse = new PositionResponse();
+                    positionResponse.setType(CommunicationConstants.POSITION_RESPONSE);
+                    positionResponse.setId(sender.getId());
+                    positionResponse.setNewPosition(sender.getPosition());
+                    positionResponse.setMoveDirection(sender.getMoveDirection());
+                    enemy.getClient().getClientThread().send(new ObjectMapper().writeValueAsString(positionResponse));
+                } catch (Exception e) {
+                    Log.write(e);
+                }
+            }
         }
     }
 }

@@ -2,12 +2,14 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class OnlineGameController : Reciver
 {
 	public Transform characterTransform;
 	public List<EnemyObject> enemyList = new List<EnemyObject> ();
 	public EnemyObject enemyObject;
+	public bool gameStarted = false;
 
 	void Start(){
 		StartCoroutine(Connect());
@@ -26,6 +28,9 @@ public class OnlineGameController : Reciver
 			}else if(res.type == CommunicationTypes.POSITION_RESPONSE){
 				PositionResponse response = JsonUtility.FromJson<PositionResponse>(data);
 				RefreshPosition(response);
+			}else if(res.type == CommunicationTypes.GAME_END_RESPONSE){
+				gameStarted = false;
+				SceneManager.LoadScene(SceenNames.MAIN_SCEEN);
 			}else{
 				Debug.Log("ParseError");
 			}
@@ -44,6 +49,7 @@ public class OnlineGameController : Reciver
 	}
 
 	private void LoadGame(StartGameResponse resp){
+		gameStarted = true;
 		informationPanel.gameObject.SetActive (false);
 		btnOk.gameObject.SetActive (true);
 
@@ -80,7 +86,9 @@ public class OnlineGameController : Reciver
 	}
 
 	public void SendMessage(string message){
-		Send (message);
+		if (gameStarted) {
+			Send (message);
+		}
 	}
 
 	public override void ConnectionResult (int res)
