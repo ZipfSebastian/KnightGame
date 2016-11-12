@@ -29,15 +29,22 @@ public class Router extends Reciver {
         try {
             RequestHandler requestHandler = new ObjectMapper().readValue(message, RequestHandler.class);
             if(requestHandler.getSession()!= null && requestHandler.getSession() != ""){
-                Session.getUserWithSession(requestHandler.getSession()).setClientThread(thread);
+                Client client = Session.getUserWithSession(requestHandler.getSession());
+                if(thread != null) {
+                    client.setClientThread(thread);
+                }
             }
             requestHandler.setConnectionSource(connectionSource);
-            requestHandler.setThread(thread);
+            if(thread !=null) {
+                requestHandler.setThread(thread);
+            }
             requestHandler.onRecive(message);
         }catch (Exception e){
             try {
                 Client client = new Client();
-                client.setClientThread(thread);
+                if(thread !=null) {
+                    client.setClientThread(thread);
+                }
                 send(Constants.BAD_REQUEST + "", Constants.TCP, client);
             }catch(Exception e1){
                 Log.write(e);

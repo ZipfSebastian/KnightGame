@@ -1,8 +1,10 @@
 package models;
 
 import thread.ClientThread;
+import thread.UDPServeThread;
 
 import java.net.DatagramSocket;
+import java.net.InetAddress;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,6 +15,24 @@ public class Client {
     private SystemUser user;
     private ClientThread clientThread;
     private int gameID;
+    private InetAddress inetAddress;
+    private int udpPort;
+
+    public InetAddress getInetAddress() {
+        return inetAddress;
+    }
+
+    public void setInetAddress(InetAddress inetAddress) {
+        this.inetAddress = inetAddress;
+    }
+
+    public int getUdpPort() {
+        return udpPort;
+    }
+
+    public void setUdpPort(int udpPort) {
+        this.udpPort = udpPort;
+    }
 
     public Client(){
 
@@ -21,14 +41,6 @@ public class Client {
     public Client(SystemUser user){
         this.user = user;
     }
-
-    public static final int STATUS_IN_GAME = 4;
-    public static final int STATUS_WAIT_FOR_GAME = 5;
-    public static final int STATUS_OFFLINE = 6;
-    public static final int STATUS_REDY_FOR_GAME = 7;
-
-
-    private DatagramSocket udpSocket;
 
     private String session;
 
@@ -83,13 +95,6 @@ public class Client {
     {"@class" : "handlers.LoginRequest", "userName" : "szebi", "password" : "szebi"}
     {"@class" : ".SubA", "a" : 5}
 */
-    public DatagramSocket getUdpSocket() {
-        return udpSocket;
-    }
-
-    public void setUdpSocket(DatagramSocket udpSocket) {
-        this.udpSocket = udpSocket;
-    }
 
     public int getGameID() {
         return gameID;

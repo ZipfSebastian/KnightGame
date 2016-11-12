@@ -27,16 +27,16 @@ public class Reciver {
     public void onRecive(String message, ClientThread thread){
 
     }
-
+/*
     public void onRecive(String message, UDPServeThread thread){
 
-    }
+    }*/
     public void send(String message, int socketType, Client client) throws IOException {
         if(socketType == Constants.TCP) {
             client.getClientThread().send(message);
         }else if(socketType == Constants.UDP){
             String udpMessage = message + "\n";
-            client.getUdpSocket().send(new DatagramPacket(udpMessage.getBytes(),0, udpMessage.getBytes().length));
+            UDPServeThread.send(udpMessage,client);
         }
     }
 }

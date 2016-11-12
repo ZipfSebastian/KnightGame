@@ -120,6 +120,7 @@ public class CommandPrompt {
                     , Long.parseLong(ServerVariables.getValue(Properties.PROP_CLIENT_SLEEP)));
 
             serveThread.start();
+            udpServeThread.start();
             Log.write("Running");
         }catch (Exception e){
             Log.write("Unable to connect to database, check you created correctly and db user can connect to it!");

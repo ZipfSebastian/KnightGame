@@ -7,6 +7,7 @@ import com.sun.xml.internal.bind.v2.runtime.reflect.opt.Const;
 import constants.Constants;
 import models.Client;
 import thread.ClientThread;
+import thread.UDPServeThread;
 
 import java.io.IOException;
 import java.lang.reflect.Type;
@@ -39,7 +40,7 @@ public class RequestHandler{
             client.getClientThread().send(message);
         }else if(socketType == Constants.UDP){
             String udpMessage = message + "\n";
-            client.getUdpSocket().send(new DatagramPacket(udpMessage.getBytes(),0, udpMessage.getBytes().length));
+            UDPServeThread.send(udpMessage,client);
         }
     }
 
