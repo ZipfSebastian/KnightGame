@@ -7,7 +7,7 @@ using Prime31;
 public class EnemyObject : InputController
 {
 	public int id;
-	private Vector2 nextPosition;
+//	private Vector2 nextPosition;
 	private Vector2 moveDirection;
 	public float correctionLimit = 1.0f;
 
@@ -29,7 +29,7 @@ public class EnemyObject : InputController
 	}
 
 	public void MoveSmothTo(Vector2 newPosition, Vector2 moveDirection){
-		nextPosition = newPosition;
+//		nextPosition = newPosition;
 		this.moveDirection = moveDirection;
 
 		if(correctionLimit <= Vector2.Distance(newPosition, transform.position)){

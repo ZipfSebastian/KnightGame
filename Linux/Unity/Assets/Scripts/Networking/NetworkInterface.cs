@@ -90,8 +90,9 @@ public class NetworkInterface : MonoBehaviour{
 				//SendPublicKey();
 				return CONNECTION_SUCESSFULL;
 			}
-			catch (Exception)
+			catch (Exception e)
 			{
+				Debug.Log (e.Message);
 				connectionStatus = UNABLE_TO_CONNECT;
 				reciver.ConnectionResult(UNABLE_TO_CONNECT);
 				if (reconnectTry < maxReconnectTry)
@@ -147,11 +148,14 @@ public class NetworkInterface : MonoBehaviour{
 			string foo = "";
 			if (compressCommunication)
 			{
-				// foo = Gzip.Compress(message) + "\r\n";
+				 foo = Gzip.Compress(message) + "\r\n";
 			}
 			else
 			{
 				foo = message + "\r\n";
+			}
+			if(!message.Contains("PingRequest")){
+				Debug.Log(message);
 			}
 			//Debug.Log(message);
 			theWriter.Write(foo);
@@ -193,7 +197,7 @@ public class NetworkInterface : MonoBehaviour{
 					message += theReader.ReadLine();
 					//message = encriptor.Decryption(message);
 
-					//Debug.Log("RECV DATA: " + message);
+					Debug.Log("RECV DATA: " + message);
 					if (message != null && message != string.Empty && message != " " && message.Length > 1)
 					{
 						//Debug.Log("RECV: " + Gzip.Decompress(message));

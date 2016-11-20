@@ -12,7 +12,7 @@ public class OnlineGameController : Reciver
 	public bool gameStarted = false;
 
 	void Start(){
-		StartCoroutine(Connect());
+		Init ();
 	}
 
 	public override void OnRecive (string data)
@@ -21,8 +21,8 @@ public class OnlineGameController : Reciver
 			Response res = JsonUtility.FromJson<Response> (data);
 			if (res.type == CommunicationTypes.INIT_RESPONSE) {
 				informationPanel.gameObject.SetActive (true);
-				mainText.text = "Waiting for players...";
-				btnOk.gameObject.SetActive (false);
+				informationPanel.mainText.text = "Waiting for players...";
+				informationPanel.btnOk.gameObject.SetActive (false);
 			} else if (res.type == CommunicationTypes.START_GAME_RESPONSE) {
 				LoadGame(JsonUtility.FromJson<StartGameResponse>(data));
 			}else if(res.type == CommunicationTypes.POSITION_RESPONSE){
@@ -51,7 +51,7 @@ public class OnlineGameController : Reciver
 	private void LoadGame(StartGameResponse resp){
 		gameStarted = true;
 		informationPanel.gameObject.SetActive (false);
-		btnOk.gameObject.SetActive (true);
+		informationPanel.btnOk.gameObject.SetActive (true);
 
 		characterTransform.position = resp.position;
 		foreach (Enemy enemy in resp.enemyList) {
@@ -85,23 +85,24 @@ public class OnlineGameController : Reciver
 		return false;
 	}
 
-	public void SendMessage(string message){
+	new public void Send(string message){
 		if (gameStarted) {
-			Send (message);
+			base.Send (message);
 		}
 	}
 
 	public override void ConnectionResult (int res)
 	{
+		Debug.Log ("RESULT: " + res);
 		base.ConnectionResult (res);
 		if (res == NetworkInterface.CONNECTION_SUCESSFULL) {
 			Request req = new Request ();
 			req.type = CommunicationTypes.INIT_REQUEST;
 			req.session = session;
-			Send(JsonUtility.ToJson(req));
+			base.Send(JsonUtility.ToJson(req));
 			informationPanel.gameObject.SetActive (true);
-			mainText.text = "Waiting for players...";
-			btnOk.gameObject.SetActive (false);
+			informationPanel.mainText.text = "Waiting for players...";
+			informationPanel.btnOk.gameObject.SetActive (false);
 		}
 	}
 }

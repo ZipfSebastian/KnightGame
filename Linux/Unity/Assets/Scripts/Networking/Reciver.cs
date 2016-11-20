@@ -1,76 +1,137 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Reciver : MonoBehaviour {
+	protected NetworkInterface networkInterface;
+	public InformationPanel informationPanel;
+	private NetworkInterfaceUDP networkInterfaceUDP;
+	public string session;
+	protected float lastUpdateTime;
+	protected float updateTime = 0.5f;
+	protected bool connected = false;
+	protected bool connectedUDP = false;
+	public bool canSendPingTCP = true;
+	public bool canSendPingUDP = false;
+	private float lastUpdateTimeUDP;
 
-    protected NetworkInterface networkInterface;
+	public virtual void OnRecive(string data) {
 
-    protected Canvas canvas;
-	public GameObject informationPanel;
-    public string session;
-	protected Text mainText;
-	protected Text buttonText;
-	protected Button btnOk;
+	}
 
-    
-    protected GameObject frontPanel;
+	void Awake() {
+		session = PlayerPrefs.GetString(LoginController.PREF_LOGIN_SESSION);
+		networkInterface = GameObject.FindGameObjectWithTag("NetworkInterface").GetComponent<NetworkInterface>();
+		networkInterfaceUDP = GameObject.FindGameObjectWithTag("NetworkInterface").GetComponent<NetworkInterfaceUDP>();
 
-    public virtual void OnRecive(string data) {
-
-    }
-
-    void Awake() {
-        canvas = GameObject.FindGameObjectWithTag("Canvas").GetComponent<Canvas>();
-        session = PlayerPrefs.GetString(LoginController.PREF_LOGIN_SESSION);
-		frontPanel = informationPanel.transform.FindChild ("FrontPanel").gameObject;
-		btnOk = frontPanel.transform.FindChild ("ButtonOk").GetComponent<Button>();
-		mainText = frontPanel.transform.FindChild ("MainText").GetComponent<Text>();
-		buttonText = btnOk.transform.FindChild ("Text").GetComponent<Text> (); 
-        informationPanel = canvas.transform.FindChild("InformationPanel").gameObject;
-        frontPanel = informationPanel.transform.FindChild("FrontPanel").gameObject;
-        networkInterface = GameObject.FindGameObjectWithTag("NetworkInterface").GetComponent<NetworkInterface>();
-    }
+	}
 
 	// Use this for initialization
-	protected void Init () {
-        networkInterface.Init();
-    }
+	protected void Init() {
+		if (networkInterface != null)
+		{
+			networkInterface.Init();
+		}
+		if(networkInterfaceUDP != null)
+		{
+			networkInterfaceUDP.Init();
+		}
+	}
 
-    public virtual void ConnectionResult(int res) {
-        int connectionStatus = networkInterface.connectionStatus;
-        if (connectionStatus == NetworkInterface.CONNECTION_SUCESSFULL) {
-            informationPanel.SetActive(false);
-            frontPanel.transform.FindChild("ButtonOk").gameObject.SetActive(true);
-        } else if (connectionStatus == NetworkInterface.UNABLE_TO_CONNECT) {
-            informationPanel.SetActive(true);
-            frontPanel.transform.FindChild("MainText")
-                .GetComponent<Text>().text = "Unable to connect to server!";
-            frontPanel.transform.FindChild("ButtonOk")
-                .FindChild("Text").GetComponent<Text>().text = "Retry";
-            frontPanel.transform.FindChild("ButtonOk").gameObject.SetActive(true);
-            frontPanel.transform.FindChild("ButtonOk")
-                .GetComponent<Button>().onClick.RemoveAllListeners();
-            frontPanel.transform.FindChild("ButtonOk")
-                .GetComponent<Button>().onClick.AddListener(() => StartCoroutine(Connect()));
-        }
-    }
+	public virtual void ConnectionResult(int res) {
+		int connectionStatus = networkInterface.connectionStatus;
+		Debug.Log (res);
+		if (connectionStatus == NetworkInterface.CONNECTION_SUCESSFULL) {
+			connected = true;
+			lastUpdateTime = Time.time;
+			informationPanel.gameObject.SetActive(false);
+			informationPanel.btnOk.gameObject.SetActive(true);
+		} else if (connectionStatus == NetworkInterface.UNABLE_TO_CONNECT) {
+			informationPanel.gameObject.SetActive(true);
+			informationPanel.mainText.text = "Unable to connect to server!";
+			informationPanel.buttonText.text = "Retry";
+			informationPanel.btnOk.gameObject.SetActive(true);
+			informationPanel.btnOk.onClick.RemoveAllListeners();
+			informationPanel.btnOk.onClick.AddListener(() => StartCoroutine(Connect()));
+			Transform backObject = informationPanel.backButtton.transform;
+			if(backObject != null)
+			{
+				backObject.GetComponent<Button>().onClick.RemoveAllListeners();
+				backObject.GetComponent<Button>().onClick.AddListener(() => BackToOptions());
+				backObject.gameObject.SetActive(true);
+			}
+		}
+	}
 
-    protected IEnumerator Connect() {
-        informationPanel.SetActive(true);
-        informationPanel.transform.FindChild("FrontPanel/MainText").GetComponent<Text>().text = "Connecting..";
-        informationPanel.transform.FindChild("FrontPanel/ButtonOk").gameObject.SetActive(false);
-        yield return new WaitForSeconds(0.5f);
-        Init();
-    }
+	public virtual void ConnectionResultUDP(int res)
+	{
+		int connectionStatus = networkInterface.connectionStatus;
+		if (connectionStatus == NetworkInterface.CONNECTION_SUCESSFULL)
+		{
+			connectedUDP = true;
+		}
+	}
 
-	protected void Send(string message) {
-        networkInterface.Send(message);
-    }
-    
+	public void BackToOptions()
+	{
+		//SceneManager.LoadScene(SceenNames.MAIN);
+	}
 
-    // Update is called once per frame
-    void Update () {
-	
+	protected IEnumerator Connect() {
+		informationPanel.gameObject.SetActive(true);
+		informationPanel.mainText.text = "Connecting..";
+		informationPanel.btnOk.gameObject.SetActive(false);
+		yield return new WaitForSeconds(0.5f);
+		Init();
+	}
+
+	public void Send(string message) {
+		networkInterface.Send(message);
+	}
+
+	public void SendUDP(string message)
+	{
+		networkInterfaceUDP.Send(message);
+	}
+
+
+	// Update is called once per frame
+	void FixedUpdate() {
+		/*if(connected && lastUpdateTime + updateTime < Time.time && canSendPingTCP)
+		{
+			Send(new PingRequest(RequestTypes.PING_REQUEST, session).ToJson());
+			lastUpdateTime = Time.time;
+		}
+		if(connectedUDP&& lastUpdateTimeUDP + updateTime < Time.time && canSendPingUDP)
+		{
+			SendUDP(new PingRequest(RequestTypes.PING_REQUEST, session).ToJson());
+			lastUpdateTimeUDP = Time.time;
+		}*/
+	}
+
+	public void ShowInformationPanelWithButton(string message)
+	{
+		informationPanel.gameObject.SetActive(true);
+		informationPanel.mainText.text = message;
+		informationPanel.buttonText.text = "Ok";
+		informationPanel.btnOk.gameObject.SetActive(true);
+		informationPanel.btnOk.onClick.RemoveAllListeners();
+		informationPanel.btnOk.onClick.AddListener(() => OnInformationPanelOkClick());
+		Transform backObject = informationPanel.backButtton.transform;
+		if (backObject != null)
+		{
+			backObject.gameObject.SetActive(false);
+		}
+	}
+
+	public void ShowInformationPanelWithoutButton(string message) {
+		informationPanel.gameObject.SetActive(true);
+		informationPanel.mainText.text = message;
+		informationPanel.btnOk.gameObject.SetActive(false);
+	}
+
+	public void OnInformationPanelOkClick() {
+		informationPanel.gameObject.SetActive(false);
 	}
 }

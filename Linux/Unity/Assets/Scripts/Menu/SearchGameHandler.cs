@@ -15,7 +15,7 @@ public class SearchGameHandler : MonoBehaviour {
 		request.type = CommunicationTypes.SEARCH_REQUEST;
 		request.state = true;
 		request.session = mainController.session;
-		mainController.SendMessage(JsonUtility.ToJson(request));
+		mainController.Send(JsonUtility.ToJson(request));
 	}
 
 	public void OnRecive(string message){
@@ -37,7 +37,7 @@ public class SearchGameHandler : MonoBehaviour {
 		request.type = CommunicationTypes.SEARCH_REQUEST;
 		request.state = false;
 		request.session = mainController.session;
-		mainController.SendMessage(JsonUtility.ToJson(request));
+		mainController.Send(JsonUtility.ToJson(request));
 		searchPanel.SetActive (false);
 	}
 

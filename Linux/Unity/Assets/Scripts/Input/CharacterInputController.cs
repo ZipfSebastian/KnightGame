@@ -90,7 +90,7 @@ public class CharacterInputController : InputController {
 				moveRequest.newPosition = transform.position;
 				moveRequest.moveDirection = movement;
 				moveRequest.type = CommunicationTypes.MOVE_REQUEST;
-				onlineGameController.SendMessage(JsonUtility.ToJson(moveRequest));
+				onlineGameController.SendUDP(JsonUtility.ToJson(moveRequest));
 			}
 		}
 	}

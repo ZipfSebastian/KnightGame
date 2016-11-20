@@ -8,6 +8,7 @@ import constants.CommunicationConstants;
 import logger.Log;
 import models.*;
 import responses.*;
+import thread.UDPServeThread;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -171,7 +172,7 @@ public class Game extends Thread {
                     positionResponse.setId(sender.getId());
                     positionResponse.setNewPosition(sender.getPosition());
                     positionResponse.setMoveDirection(sender.getMoveDirection());
-                    enemy.getClient().getClientThread().send(new ObjectMapper().writeValueAsString(positionResponse));
+                    UDPServeThread.send(new ObjectMapper().writeValueAsString(positionResponse),enemy.getClient());
                 } catch (Exception e) {
                     Log.write(e);
                 }

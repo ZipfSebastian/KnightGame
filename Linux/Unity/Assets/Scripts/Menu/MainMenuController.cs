@@ -33,11 +33,8 @@ public class MainMenuController : Reciver
 	}
 
 	private void HideInformationPanel() {
-		informationPanel.SetActive(false);
+		informationPanel.gameObject.SetActive(false);
 	}
 
-	public void SendMessage(string message){
-		base.Send (message);
-	}
 }
 

@@ -30,7 +30,6 @@ public class LoginResponse{
 [Serializable]
 public class SearchRequest : Request{
 	public bool state;
-	public string session;
 }
 
 [Serializable]

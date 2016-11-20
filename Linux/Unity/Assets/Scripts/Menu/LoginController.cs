@@ -42,7 +42,7 @@ public class LoginController : MonoBehaviour {
 		loginRequest.password = passwordInput.text;
 		loginRequest.userName = usernameInput.text;
 		loginRequest.type = CommunicationTypes.LOGIN_REQUEST_TYPE;
-		mainController.SendMessage (JsonUtility.ToJson (loginRequest));
+		mainController.Send (JsonUtility.ToJson (loginRequest));
     }
 
 
@@ -53,7 +53,7 @@ public class LoginController : MonoBehaviour {
 			PlayerPrefs.SetString(LoginController.PREF_LOGIN_SESSION,resp.session);
 			canvasAnimator.SetBool(AnimationNames.LOGIN_TO_SEARCH, true);
 		}else{
-			mainController.informationPanel.SetActive(true);
+			mainController.informationPanel.gameObject.SetActive(true);
 			mainController.informationText.text = "Bad username or password!";
 			mainController.btnEvent.onClick.RemoveAllListeners();
 			mainController.btnEvent.onClick.AddListener(() => HideInformationPanel());
@@ -62,7 +62,7 @@ public class LoginController : MonoBehaviour {
     }
 
 	private void HideInformationPanel() {
-		mainController.informationPanel.SetActive(false);
+		mainController.informationPanel.gameObject.SetActive(false);
 	}
 
 
