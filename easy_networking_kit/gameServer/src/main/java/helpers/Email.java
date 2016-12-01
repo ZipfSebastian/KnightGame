@@ -21,7 +21,7 @@ public class Email {
     /*
     Send an email to user
      */
-    public void sendEmail(String to, String messageText, String subject){
+    public static void sendEmail(String to, String messageText, String subject){
 
         // Get system properties
         Properties properties = System.getProperties();
